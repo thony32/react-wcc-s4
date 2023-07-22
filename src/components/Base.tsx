@@ -14,7 +14,7 @@ export default function Base() {
                             </div>
                             <p className="text-2xl text-black/50">Italian pasta with special sauce is a <br /> flavor you can find only in <b className="text-black">fode</b></p>
                         </div>
-                        <div className="flex items-center gap-10">
+                        <div className="grid grid-cols-5">
                             <div>
                                 <div className="line-through opacity-50">$7.90</div>
                                 <CountUp
