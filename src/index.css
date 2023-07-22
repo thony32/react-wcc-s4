@@ -3,49 +3,15 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "gilroy-bold";
-    src: url("./fonts/Gilroy-Bold.woff2") format("woff2");
-  }
-  
-  @font-face {
-    font-family: "gilroy";
-    src: url("./fonts/Gilroy-Regular.woff2") format("woff2");
-  }
-  
-  .gilroy {
-    font-family: "gilroy", sans-serif;
-  }
+  font-family: "gilroy-bold";
+  src: url("./fonts/Gilroy-Bold.woff2") format("woff2");
+}
 
-  .loader {
-    display: block;
-    width: 20px;
-    height: 20px;
-    position: relative;
-  }
-  
-  .loader:before , .loader:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #fe9a02;
-    transform: translate(-50% , -100%)  scale(0);
-    animation: push_401 2s infinite linear;
-  }
-  
-  .loader:after {
-    animation-delay: 1s;
-  }
-  
-  @keyframes push_401 {
-    0% , 50% {
-      transform: translate(-50% , 0%)  scale(1)
-    }
-  
-    100% {
-      transform: translate(-50%, -100%) scale(0)
-    }
-  }
+@font-face {
+  font-family: "gilroy";
+  src: url("./fonts/Gilroy-Regular.woff2") format("woff2");
+}
+
+.gilroy {
+  font-family: "gilroy", sans-serif;
+}
