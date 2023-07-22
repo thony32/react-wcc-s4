@@ -24,7 +24,9 @@ function App() {
 
   return (
     <div className='gilroy relative'>
-      <div className='absolute top-0 right-0 h-full -z-50'>
+      <div className={
+        isLoad ? 'opacity-0 duration-1000 ease-in-out' : 'opacity-100 duration-1000 ease-in-out absolute top-0 right-0 h-full -z-50'
+      }>
         <img className="h-full w-full z-0" src="/images/back.png" alt="" />
       </div>
 
