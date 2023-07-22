@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Base from "./components/Base";
 import Navbar from "./components/Navbar";
+import AnimatedCursor from "react-animated-cursor"
 
 function App() {
   const [isLoad, setIsLoad] = useState(true);
@@ -22,13 +23,24 @@ function App() {
 
   return (
     <div className='relative gilroy'>
+      <AnimatedCursor
+        innerSize={15}
+        outerSize={20}
+        color='240,186,113'
+        outerAlpha={0.5}
+        innerScale={1.5}
+        outerScale={3}
+        clickables={[
+          'button'
+        ]}
+      />
       {/* nap */}
       <div>
         <img className='absolute bottom-[20%] scale-110' src="/images/nap.png" alt="" />
       </div>
       {/* ondulation */}
       <div>
-        <img className="absolute top-[20%] left-[5%]" src="/src/assets/ondulations.svg" alt=""/>
+        <img className="absolute top-[20%] left-[5%]" src="/src/assets/ondulations.svg" alt="" />
       </div>
       <div className={
         isLoad ? 'opacity-0 duration-1000 ease-in-out' : 'opacity-100 duration-1000 ease-in-out absolute top-0 right-0 h-full -z-50'
