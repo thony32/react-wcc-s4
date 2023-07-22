@@ -14,27 +14,6 @@ function App() {
   });
 
   useEffect(() => {
-<<<<<<< HEAD
-    setTimeout(() => {
-      setIsLoad(false)
-      setValia(" hidden lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700")
-      setBaguette_deux(" hidden lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[115%] lg:translate-y-[20%] 2xl:translate-x-[165%] 2xl:translate-y-[30%] z-10 absolute duration-700")
-      setBaguette_un(" hidden lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[155%] lg:translate-x-[117%] lg:translate-y-[27%] translate-x-[168%] translate-y-[40%] z-10 absolute duration-700")
-      setVanttan("hidden lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[258%] lg:translate-x-[190%] 2xl:translate-y-[45%] translate-x-[260%] lg:translate-y-[25%] z-0 absolute duration-700")
-    }, 2000)
-  })
-
-  return (
-    <div className='relative gilroy'>
-      {/* nap */}
-      <div>
-        <img className='hidden absolute bottom-[20%] scale-110' src="/images/nap.png" alt="" />
-      </div>
-      {/* ondulation */}
-      <div>
-        <img className="absolute top-[20%] left-[5%]" src="/src/assets/ondulations.svg" alt=""/>
-      </div>
-=======
     document.body.style.overflow = "hidden";
 
     const updateAnimations = () => {
@@ -67,15 +46,10 @@ function App() {
         ]}
       />
       {/* loading */}
->>>>>>> a394648cd8368e5c96fc01154f848802fbf9d34a
       <div className={
         isLoad ? 'opacity-100 duration-1000 ease-in-out h-screen flex justify-center items-center translate-y-52' : 'hidden'
       }>
-<<<<<<< HEAD
-        <img className="w-auto h-auto lg:h-full lg:w-full z-0" src="/images/back.png" alt="" />
-=======
         <Loading />
->>>>>>> a394648cd8368e5c96fc01154f848802fbf9d34a
       </div>
       {/* images */}
       <div className="absolute -z-40 top-0 left-0 w-full h-screen translate-y-10">
