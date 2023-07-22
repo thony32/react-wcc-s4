@@ -1,8 +1,24 @@
+import { useState } from "react";
 import Chef from "./Chef";
 import Pizza from "./Pizza";
 import CountUp from "react-countup";
+import Typed from 'react-typed';
+import 'react-typed/dist/animatedCursor.css';
 
 export default function Base() {
+    // * for buy button
+    const [shop, setShop] = useState("w-5 fill-[#151515] group-hover:scale-125 duration-300 ease-in-out")
+    const [check, setCheck] = useState("w-5 text-[#151515] absolute duration-300 ease-in-out opacity-0")
+
+    const handleBuy = () => {
+        setShop("w-5 fill-[#151515] group-hover:scale-125 duration-300 ease-in-out translate-y-5 opacity-0")
+        setCheck("w-5 text-[#151515] absolute duration-300 ease-in-out opacity-100")
+
+        setTimeout(() => {
+            setShop("w-5 fill-[#151515] group-hover:scale-125 duration-300 ease-in-out")
+            setCheck("w-5 text-[#151515] absolute duration-300  translate-y-5 ease-in-out opacity-0")
+        }, 2000)
+    }
     return (
         <div>
             <div className="grid grid-cols-2 h-[90vh] px-[15%]">
@@ -11,7 +27,16 @@ export default function Base() {
                         <div className="space-y-6">
                             <div className="space-y-3">
                                 <h1 className="text-7xl">Italian Pasta</h1>
-                                <h1 className="text-7xl font-extrabold">With special sauce</h1>
+                                <div className="h-20 w-[750px]">
+                                    <Typed
+                                        className="text-7xl font-extrabold"
+                                        strings={['With special sauce']}
+                                        typeSpeed={100}
+                                        backSpeed={100}
+                                        loop
+                                    >
+                                    </Typed>
+                                </div>
                             </div>
                             <p className="text-2xl text-black/50">Italian pasta with special sauce is a <br /> flavor you can find only in <b className="text-black">fode</b></p>
                         </div>
@@ -19,7 +44,7 @@ export default function Base() {
                             <div>
                                 <div className="line-through opacity-50">$7.90</div>
                                 <CountUp
-                                    delay={0}
+                                    delay={3}
                                     start={0}
                                     end={7.9}
                                     duration={4}
@@ -33,10 +58,10 @@ export default function Base() {
                                     )}
                                 </CountUp>
                             </div>
-                            <div>
-                                <button className="bg-[#151515] p-5 rounded-full flex items-center gap-5 w-[250px]">
-                                    <span className="bg-[#F0BA71] flex items-center justify-center p-3 rounded-full ring-1 ring-white">
-                                        <svg className="w-5 fill-[#151515]" viewBox="704.081 796 200 200">
+                            <div className="col-span-4">
+                                <button onClick={handleBuy} className="bg-[#151515] active:scale-105 p-5 rounded-full duration-150 flex items-center gap-5 w-1/2 group cursor-pointer">
+                                    <span className="bg-[#F0BA71] flex items-center justify-center p-3 duration-100 rounded-full ring-1 ring-white">
+                                        <svg className={shop} viewBox="704.081 796 200 200">
                                             <path d="M891.876,977.909l-6.938-125.811h-34.661v-10.157c0-25.333-20.608-45.941-45.94-45.941s-45.94,20.609-45.94,45.941v10.157
 	h-36.161l-5.969,126.355l-0.006,0.219c-0.049,4.547,1.758,9.01,4.955,12.239c3.198,3.233,7.641,5.089,12.19,5.089h141.351
 	c4.688,0,9.228-1.953,12.453-5.36C890.434,987.233,892.135,982.593,891.876,977.909z M770.379,841.941
@@ -45,6 +70,9 @@ export default function Base() {
 	h24.731v15.173c0,3.309,2.682,5.991,5.991,5.991c3.309,0,5.991-2.682,5.991-5.991v-15.173h67.917v15.173
 	c0,3.309,2.682,5.991,5.991,5.991c3.309,0,5.99-2.682,5.99-5.991v-15.173h23.321l6.313,114.49
 	C879.99,979.98,879.478,981.377,878.507,982.402z" />
+                                        </svg>
+                                        <svg className={check} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                         </svg>
                                     </span>
                                     <span className="text-white text-2xl font-bold capitalize">Buy now</span>
@@ -58,7 +86,7 @@ export default function Base() {
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <div className="flex justify-between gap-16 p-16 -translate-y-[20%]">
                 <Chef />

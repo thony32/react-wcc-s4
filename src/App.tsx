@@ -24,12 +24,12 @@ function App() {
 
   return (
     <div className='gilroy relative'>
-      <div className='absolute top-0 right-0 h-full z-0'>
+      <div className='absolute top-0 right-0 h-full -z-50'>
         <img className="h-full w-full z-0" src="/images/back.png" alt="" />
       </div>
 
       {/* images */}
-      <div className="absolute top-0 left-0 w-full h-screen">
+      <div className="absolute -z-50 top-0 left-0 w-full h-screen">
         <div className='h-full relative'>
           <div className={isLoad ? '-translate-x-[23%] duration-700' : 'translate-x-0 duration-700'}>
             {/* vilia */}
@@ -64,7 +64,7 @@ function App() {
         <div className='absolute w-full'>
           <Navbar />
         </div>
-        <div className='z-50'>
+        <div className='!z-50'>
           <Base />
         </div>
       </div>
