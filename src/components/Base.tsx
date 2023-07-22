@@ -49,15 +49,15 @@ export default function Base() {
 
     return (
         <div>
-            <div className="grid grid-cols-2 h-[90vh] px-[15%]">
+            <div className="grid grid-cols-2 lg:h-[115vh] 2xl:h-[90vh] px-[15%]">
                 <div className="flex items-center">
                     <div className="space-y-10">
-                        <div className="space-y-6">
+                        <div className="lg:space-y-3 2xl:space-y-6">
                             <div className="space-y-3">
-                                <h1 className="text-7xl">Italian Pasta</h1>
+                                <h1 className=" lg:text-5xl 2xl:text-7xl">Italian Pasta</h1>
                                 <div className="h-20 w-[750px]">
                                     <Typed
-                                        className="text-7xl font-extrabold"
+                                        className="lg:text-5xl 2xl:text-7xl font-extrabold"
                                         strings={['With special sauce']}
                                         typeSpeed={100}
                                         backSpeed={100}
@@ -80,14 +80,14 @@ export default function Base() {
                                     decimal=","
                                 >
                                     {({ countUpRef }) => (
-                                        <div className="text-2xl lg:text-4xl">
+                                        <div className="lg:text-3xl 2xl:text-4xl">
                                             $<span ref={countUpRef} className="animate-bounce infinite" />
                                         </div>
                                     )}
                                 </CountUp>
                             </div>
                             <div className="col-span-4">
-                                <button onClick={handleBuy} className="bg-[#151515] hover:ring hover:ring-[#151515] hover:ring-offset-2 active:scale-105 p-5 rounded-full duration-150 flex items-center gap-5 w-1/2 group cursor-pointer">
+                                <button onClick={handleBuy} className="bg-[#151515] hover:ring hover:ring-[#151515] hover:ring-offset-2 active:scale-105 lg:p-3 2xl:p-5 rounded-full duration-150 flex items-center gap-5 lg:w-2/5 2xl:w-1/2 group cursor-pointer">
                                     <span className="bg-[#F0BA71] flex items-center justify-center p-3 duration-100 rounded-full ring-1 ring-white">
                                         <svg className={shop} viewBox="704.081 796 200 200">
                                             <path d="M891.876,977.909l-6.938-125.811h-34.661v-10.157c0-25.333-20.608-45.941-45.94-45.941s-45.94,20.609-45.94,45.941v10.157
@@ -103,7 +103,7 @@ export default function Base() {
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                         </svg>
                                     </span>
-                                    <span className="text-white text-2xl font-bold capitalize">Buy now</span>
+                                    <span className="text-white xl:text-xl 2xl:text-2xl font-bold capitalize">Buy now</span>
                                 </button>
                             </div>
                         </div>
