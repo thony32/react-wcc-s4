@@ -12,24 +12,30 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      setIsLoad(false);
-      setValia(" lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700");
-      setBaguette_deux(" lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[115%] lg:translate-y-[20%] 2xl:translate-x-[165%] 2xl:translate-y-[30%] z-10 absolute duration-700");
-      setBaguette_un(" lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[117%] lg:translate-y-[27%] translate-x-[168%] translate-y-[40%] z-10 absolute duration-700");
-      setVanttan("lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[190%] lg:translate-y-[23%] translate-x-[260%] translate-y-[45%] z-0 absolute duration-700");
-    }, 2000);
-  });
+      setIsLoad(false)
+      setValia(" lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700")
+      setBaguette_deux(" lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[115%] lg:translate-y-[20%] 2xl:translate-x-[165%] 2xl:translate-y-[30%] z-10 absolute duration-700")
+      setBaguette_un(" lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[155%] lg:translate-x-[117%] lg:translate-y-[27%] translate-x-[168%] translate-y-[40%] z-10 absolute duration-700")
+      setVanttan("lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[258%] lg:translate-x-[190%] 2xl:translate-y-[45%] translate-x-[260%] lg:translate-y-[25%] z-0 absolute duration-700")
+    }, 2000)
+  })
 
   return (
-    <div className="gilroy relative">
-      <div className={isLoad ? "opacity-0 duration-1000 ease-in-out" : "opacity-100 duration-1000 ease-in-out absolute top-0 right-0 h-full -z-50"}>
+    <div className='relative'>
+      {/* nap */}
+      <div>
+        <img className='absolute bottom-[20%] scale-110' src="/images/nap.png" alt="" />
+      </div>
+      <div className={
+        isLoad ? 'opacity-0 duration-1000 ease-in-out' : 'opacity-100 duration-1000 ease-in-out absolute top-0 right-0 h-full -z-50'
+      }>
         <img className="h-full w-full z-0" src="/images/back.png" alt="" />
       </div>
 
       {/* images */}
-      <div className="absolute -z-50 top-0 left-0 w-full h-screen">
-        <div className="h-full relative">
-          <div className={isLoad ? "-translate-x-[23%] duration-700" : "translate-x-0 duration-700"}>
+      <div className="absolute -z-50 top-0 left-0 w-full h-screen translate-y-10">
+        <div className='h-full relative'>
+          <div className={isLoad ? '-translate-x-[23%] duration-700' : 'translate-x-0 duration-700'}>
             {/* vilia */}
             <img className={valia} src="/images/vilia.png" alt="" />
             {/* bagette */}
