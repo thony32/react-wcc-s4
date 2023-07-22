@@ -57,8 +57,8 @@ export default function Pizza() {
             Next
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              
-              
+
+
               zoomAndPan="magnify"
               viewBox="0 0 75 37.5"
               className="w-6 h-6"
@@ -96,7 +96,7 @@ export default function Pizza() {
                 />
               </g>
             </svg>
-            
+
           </div>
         </div>
       </div>

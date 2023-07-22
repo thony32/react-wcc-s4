@@ -1,6 +1,6 @@
 export default function Chef() {
   return (
-    <div className="relative flex items-center gap-8 p-8 border-l-4  border-dashed border-l-grey-400 rounded-l-full translate-x-[100px]">
+    <div className="relative flex items-center gap-8 p-8 border-l-4  border-dashed border-l-grey-400 rounded-l-full ml-[100px] cursor-default group">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="absolute top-0 right-0 w-6 h-6"
@@ -28,11 +28,11 @@ export default function Chef() {
       </svg>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        
+
         className="absolute bottom-0 right-0 w-6 h-6"
         zoomAndPan="magnify"
         viewBox="0 0 30 30.000001"
-        
+
         preserveAspectRatio="xMidYMid meet"
         version="1.0"
       >
@@ -53,7 +53,10 @@ export default function Chef() {
           />
         </g>
       </svg>
-      <div>sary</div>
+      <div className="relative">
+        <img className="z-50 rounded-full translate-y-2 group-hover:scale-125 duration-300" width="100px" src="/images/chef.png" alt="ald" />
+        <img className="-z-50 absolute top-[10%]" width="100px" src="/images/circle.svg" alt="ald" />
+      </div>
       <div>
         <div className="text-3xl">Chef's Recommendation</div>
         <div className="flex gap-2 text-3xl font-bold">
