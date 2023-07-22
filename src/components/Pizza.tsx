@@ -2,7 +2,7 @@ import CountUp from "react-countup";
 import pizza from "../assets/pizza.png";
 export default function Pizza() {
   return (
-    <div className="h-full lg:w-[600px] lg:h-[220px] text-white">
+    <div className="h-full lg:w-[500px] lg:h-[300px] text-white">
       <div className="flex border-dashed border-white border border-b-0 rounded-t-2xl justify-between p-4">
         {/* Discount coupon */}
         <div className="p-4">
@@ -27,10 +27,10 @@ export default function Pizza() {
                 <path fill="#ffffff" d="M 46.914062 17.792969 L 27.253906 17.792969 C 26.867188 17.792969 26.550781 18.121094 26.550781 18.53125 C 26.550781 18.941406 26.867188 19.273438 27.253906 19.273438 L 46.914062 19.273438 C 47.300781 19.273438 47.617188 18.941406 47.617188 18.53125 C 47.617188 18.121094 47.300781 17.792969 46.914062 17.792969 Z M 46.914062 17.792969 " fill-opacity="1" fill-rule="nonzero" />
               </g>
             </svg>
-            Prev.
+            Prev
           </div>
           {/* Next */}
-          <div className="flex scale-105 font-semibold">
+          <div className="flex font-bold">
             Next
             <svg xmlns="http://www.w3.org/2000/svg" zoomAndPan="magnify" viewBox="0 0 75 37.5" className="w-6 h-6" preserveAspectRatio="xMidYMid meet" version="1.0">
               <defs>
@@ -55,11 +55,11 @@ export default function Pizza() {
       <div className="p-4 border border-dashed border-white rounded-2xl -translate-y-[10%]">
         <div className="grid grid-cols-5">
           <div>
-            <img src={pizza} alt="" className="w-20" />
+            <img src={pizza} alt="" className="w-16 2xl:w-20" />
           </div>
 
-          <div className="col-span-2 flex flex-col gap-4 items-center lg:items-start justify-center">
-            <div className=" lg:text-2xl text-left">Mexicoo Pizza</div>
+          <div className="col-span-2 flex flex-col lg:gap-2 2xl:gap-4 items-center lg:items-start justify-center">
+            <div className=" lg:text-xl 2xl:text-2xl text-left">Mexicoo Pizza</div>
             <div className="text-sm flex gap-2 items-center">
               <div className="loader"></div>
               78 Calories
@@ -67,8 +67,16 @@ export default function Pizza() {
           </div>
 
           <div className="flex flex-col gap-3 justify-center">
-            <div className="line-through text-warning">$7.90</div>
-            <CountUp delay={0} start={0} end={7.9} duration={4} decimals={2} decimal=",">
+            <div className="line-through text-[#ffdb80]">$7.90</div>
+            <CountUp
+              delay={0}
+              start={0}
+              end={7.9}
+              duration={4}
+              decimals={2}
+              decimal=","
+            >
+
               {({ countUpRef }) => (
                 <div className="text-2xl lg:text-3xl  ">
                   $<span ref={countUpRef} className="animate-bounce infinite" />
@@ -78,9 +86,14 @@ export default function Pizza() {
           </div>
 
           <div className="flex justify-center items-center">
-            <div className="flex items-center justify-center gap-2 btn btn-warning rounded-full lowercase">
+            <div className="flex items-center justify-center gap-2 btn lg:btn-sm 2xl:btn-md bg-[#ffdb80] rounded-full lowercase">
               <div>
-                <svg className="w-7 h-7 stroke-black fill-none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                <svg
+                  className="lg:w-6 lg:h-6 2xl:w-7 2xl:h-7 stroke-black fill-none"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <defs></defs>
 
                   <g id="ic-actions-timer">
@@ -90,7 +103,7 @@ export default function Pizza() {
                   </g>
                 </svg>
               </div>
-              <div className="text-center text-lg">30 dk.</div>
+              <div className="text-center lg:text-sm 2xl:text-lg">30 dk.</div>
             </div>
           </div>
         </div>

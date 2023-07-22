@@ -160,11 +160,11 @@ export default function Base() {
         </div>
 
       </div>
-      <div className="flex justify-between gap-16 p-16 -translate-y-[15%]">
+      <div className="flex justify-between lg:gap-10 lg:p-5 2xl:gap-16 2xl:gap-16 -translate-y-[10%]">
         <Chef />
 
-        <div className="flex items-center translate-x-[150%] ">
-          <span className="p-2 text-white font-semibold rotate-90 ... -translate-y-[150%] ">
+        <div className="flex items-center lg:translate-x-[110%] 2xl:translate-x-[150%] ">
+          <span className="lg:p-0 2xl:p-2 text-white font-semibold rotate-90 ... -translate-y-[100%] ">
             scroll
           </span>
           <svg
