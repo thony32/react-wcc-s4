@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Base from "./components/Base";
 import Navbar from "./components/Navbar";
 import AnimatedCursor from "react-animated-cursor"
+import Loading from "./components/Loading";
 
 function App() {
   const [isLoad, setIsLoad] = useState(true);
@@ -13,12 +14,12 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      setIsLoad(false)
-      setValia(" lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700")
-      setBaguette_deux(" lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[115%] lg:translate-y-[20%] 2xl:translate-x-[165%] 2xl:translate-y-[30%] z-10 absolute duration-700")
-      setBaguette_un(" lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[155%] lg:translate-x-[117%] lg:translate-y-[27%] translate-x-[168%] translate-y-[40%] z-10 absolute duration-700")
-      setVanttan("lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[258%] lg:translate-x-[190%] 2xl:translate-y-[45%] translate-x-[260%] lg:translate-y-[25%] z-0 absolute duration-700")
-    }, 2000)
+      setIsLoad(true)
+      // setValia(" lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700")
+      // setBaguette_deux(" lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[115%] lg:translate-y-[20%] 2xl:translate-x-[165%] 2xl:translate-y-[30%] z-10 absolute duration-700")
+      // setBaguette_un(" lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[155%] lg:translate-x-[117%] lg:translate-y-[27%] translate-x-[168%] translate-y-[40%] z-10 absolute duration-700")
+      // setVanttan("lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[258%] lg:translate-x-[190%] 2xl:translate-y-[45%] translate-x-[260%] lg:translate-y-[25%] z-0 absolute duration-700")
+    }, 3000)
   })
 
   return (
@@ -34,13 +35,23 @@ function App() {
           'button'
         ]}
       />
+      {/* loading */}
+      <div className={
+          isLoad ? 'opacity-100 duration-1000 ease-in-out h-screen flex justify-center items-center translate-y-52 -translate-x-12 overflow-y-hidden' : 'hidden'
+        }>
+        <Loading />
+      </div>
       {/* nap */}
       <div>
-        <img className='absolute bottom-[20%] scale-110' src="/images/nap.png" alt="" />
+        <img className={
+          isLoad ? 'opacity-0 duration-1000 ease-in-out' : 'opacity-100 duration-1000 ease-in-out absolute bottom-[20%] scale-110'
+        } src="/images/nap.png" alt="" />
       </div>
       {/* ondulation */}
       <div>
-        <img className="absolute top-[20%] left-[5%]" src="/src/assets/ondulations.svg" alt="" />
+        <img className={
+          isLoad ? 'opacity-0 duration-1000 ease-in-out' : 'opacity-100 duration-1000 ease-in-out absolute top-[20%] left-[5%]'
+        } src="/src/assets/ondulations.svg" alt="" />
       </div>
       <div className={
         isLoad ? 'opacity-0 duration-1000 ease-in-out' : 'opacity-100 duration-1000 ease-in-out absolute top-0 right-0 h-full -z-50'

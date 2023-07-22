@@ -38,7 +38,7 @@ export default function Base() {
   const bar_three = document.getElementById("bar_three");
 
   const [c_bar_one, setC_bar_one] = useState(
-    "w-12 h-2 rounded-2xl bg-[#F0BA71] cursor-pointer duration-300"
+    "w-12 h-2 rounded-2xl bg-[#FCDA7E] cursor-pointer duration-300"
   );
   const [c_bar_two, setC_bar_two] = useState(
     "w-6 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300"
@@ -49,7 +49,7 @@ export default function Base() {
 
   bar_one?.addEventListener("mouseover", () => {
     setC_bar_one(
-      "w-12 h-2 rounded-2xl bg-[#F0BA71] cursor-pointer duration-300"
+      "w-12 h-2 rounded-2xl bg-[#FCDA7E] cursor-pointer duration-300"
     );
     setC_bar_two("w-6 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300");
     setC_bar_three(
@@ -60,7 +60,7 @@ export default function Base() {
   bar_two?.addEventListener("mouseover", () => {
     setC_bar_one("w-3 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300");
     setC_bar_two(
-      "w-12 h-2 rounded-2xl bg-[#F0BA71] cursor-pointer duration-300"
+      "w-12 h-2 rounded-2xl bg-[#FCDA7E] cursor-pointer duration-300"
     );
     setC_bar_three(
       "w-3 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300"
@@ -71,7 +71,7 @@ export default function Base() {
     setC_bar_one("w-3 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300");
     setC_bar_two("w-6 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300");
     setC_bar_three(
-      "w-12 h-2 rounded-2xl bg-[#F0BA71] cursor-pointer duration-300"
+      "w-12 h-2 rounded-2xl bg-[#FCDA7E] cursor-pointer duration-300"
     );
   });
 
@@ -116,7 +116,7 @@ export default function Base() {
               </div>
               <div className="col-span-4">
                 <button onClick={handleBuy} className="bg-[#151515] hover:ring hover:ring-[#151515] hover:ring-offset-2 active:scale-105 lg:p-3 2xl:p-5 rounded-full duration-150 flex items-center gap-5 lg:w-2/5 2xl:w-1/2 group cursor-pointer">
-                  <span className="bg-[#F0BA71] flex items-center justify-center p-3 duration-100 rounded-full ring-1 ring-white">
+                  <span className="bg-[#FCDA7E] flex items-center justify-center p-3 duration-100 rounded-full ring-1 ring-white">
                     <svg className={shop} viewBox="704.081 796 200 200">
                       <path d="M891.876,977.909l-6.938-125.811h-34.661v-10.157c0-25.333-20.608-45.941-45.94-45.941s-45.94,20.609-45.94,45.941v10.157
 
