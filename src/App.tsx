@@ -7,10 +7,10 @@ import Loading from "./components/Loading";
 function App() {
   const [isLoad, setIsLoad] = useState(true);
 
-  const [valia, setValia] = useState("scale-[30%] lg:translate-x-[117%] lg:translate-y-[10%] 2xl:translate-x-[212%] 2xl:translate-y-[25%] absolute duration-700");
-  const [baguette_deux, setBaguette_deux] = useState("scale-[30%] lg:translate-x-[121%] lg:translate-y-[45%] 2xl:translate-x-[172%] 2xl:translate-y-[75%] rotate-[20deg] z-10 absolute duration-700");
-  const [baguette_un, setBaguette_un] = useState("scale-[30%] 2xl:translate-x-[162%] lg:translate-x-[107%] 2xl:translate-y-[75%] lg:translate-y-[50%] translate-x-[150%] translate-y-[75%] rotate-[90deg] z-10 absolute duration-700");
-  const [vanttan, setVanttan] = useState("scale-[20%] lg:translate-x-[187%] lg:translate-y-[50%] 2xl:translate-x-[267%] 2xl:translate-y-[65%] z-0 absolute duration-700");
+  const [valia, setValia] = useState("scale-[30%] lg:translate-x-[138%] lg:translate-y-[10%] 2xl:translate-x-[212%] 2xl:translate-y-[25%] absolute duration-700");
+  const [baguette_deux, setBaguette_deux] = useState("scale-[30%] lg:translate-x-[110%] lg:translate-y-[45%] 2xl:translate-x-[172%] 2xl:translate-y-[75%] rotate-[20deg] z-10 absolute duration-700");
+  const [baguette_un, setBaguette_un] = useState("scale-[30%] 2xl:translate-x-[162%] lg:translate-x-[98%] 2xl:translate-y-[75%] lg:translate-y-[50%] translate-x-[150%] translate-y-[75%] rotate-[90deg] z-10 absolute duration-700");
+  const [vanttan, setVanttan] = useState("scale-[20%] lg:translate-x-[178%] lg:translate-y-[45%] 2xl:translate-x-[267%] 2xl:translate-y-[65%] z-0 absolute duration-700");
 
   useEffect(() => {
     document.body.style.overflow = "hidden"
