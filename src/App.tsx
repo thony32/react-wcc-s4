@@ -41,9 +41,9 @@ function App() {
             {/* Others */}
             <div className={isLoad ? "opacity-0 duration-1000 ease-in-out" : "opacity-100 duration-1000 ease-in-out"}>
               <img className=" blur-sm lg:scale-[55%] 2xl:scale-[100%] lg:translate-x-[545%]  lg:translate-y-[90%] 2xl:translate-x-[700%]  2xl:translate-y-[125%] absolute duration-700" src="/images/tomate.png" alt="" />
-              <img className=" blur-sm lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[520%]  lg:translate-y-[50%] translate-x-[700%]  translate-y-[75%] absolute duration-700" src="/images/leaf 1.png" alt="" />
-              <img className=" blur-sm lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[1060%]  lg:translate-y-[360%] translate-x-[1400%] translate-y-[500%] absolute duration-700" src="/images/leaf 2.png" alt="" />
-              <img className=" blur-sm lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[1080%]  lg:translate-y-[530%] translate-x-[1400%] translate-y-[750%] absolute duration-700" src="/images/oignon.png" alt="" />
+              <img className=" blur-sm lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[700%] lg:translate-x-[520%] 2xl:translate-y-[75%] lg:translate-y-[50%] translate-x-[700%]  translate-y-[75%] absolute duration-700" src="/images/leaf 1.png" alt="" />
+              <img className=" blur-sm lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[1400%] lg:translate-x-[1060%] 2xl:translate-y-[500%] lg:translate-y-[360%] translate-x-[1400%] translate-y-[500%] absolute duration-700" src="/images/leaf 2.png" alt="" />
+              <img className=" blur-sm lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[1350%] lg:translate-x-[1080%] 2xl:translate-y-[730%] lg:translate-y-[530%] translate-x-[1400%] translate-y-[750%] absolute duration-700" src="/images/oignon.png" alt="" />
             </div>
           </div>
         </div>
