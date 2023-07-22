@@ -13,8 +13,10 @@ function App() {
   const [vanttan, setVanttan] = useState("scale-[20%] lg:translate-x-[187%] lg:translate-y-[50%] 2xl:translate-x-[267%] 2xl:translate-y-[65%] z-0 absolute duration-700");
 
   useEffect(() => {
+    document.body.style.overflow = "hidden"
     setTimeout(() => {
       setIsLoad(false)
+      document.body.style.overflow = "auto"
       setValia(" lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700")
       setBaguette_deux(" lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[115%] lg:translate-y-[20%] 2xl:translate-x-[165%] 2xl:translate-y-[30%] z-10 absolute duration-700")
       setBaguette_un(" lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[155%] lg:translate-x-[117%] lg:translate-y-[27%] translate-x-[168%] translate-y-[40%] z-10 absolute duration-700")
