@@ -1,16 +1,20 @@
 import { useEffect, useState } from "react";
 import Base from "./components/Base";
 import Navbar from "./components/Navbar";
+import AnimatedCursor from "react-animated-cursor"
+import Loading from "./components/Loading";
 
 function App() {
   const [isLoad, setIsLoad] = useState(true);
-
-  const [valia, setValia] = useState("scale-[30%] lg:translate-x-[135%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700");
-  const [baguette_deux, setBaguette_deux] = useState("scale-[30%] lg:translate-x-[109%] lg:translate-y-[45%] 2xl:translate-x-[160%] 2xl:translate-y-[75%] rotate-[20deg] z-10 absolute duration-700");
-  const [baguette_un, setBaguette_un] = useState("scale-[30%] 2xl:translate-x-[150%] lg:translate-x-[95%] 2xl:translate-y-[75%] lg:translate-y-[50%] translate-x-[150%] translate-y-[75%] rotate-[90deg] z-10 absolute duration-700");
-  const [vanttan, setVanttan] = useState("scale-[20%] lg:translate-x-[175%] lg:translate-y-[50%] 2xl:translate-x-[255%] 2xl:translate-y-[65%] z-0 absolute duration-700");
+  const [animationStyles, setAnimationStyles] = useState({
+    valia: "scale-[30%] lg:translate-x-[138%] lg:translate-y-[10%] 2xl:translate-x-[212%] 2xl:translate-y-[25%] absolute duration-700",
+    baguette_deux: "scale-[30%] lg:translate-x-[110%] lg:translate-y-[45%] 2xl:translate-x-[172%] 2xl:translate-y-[75%] rotate-[20deg] z-10 absolute duration-700",
+    baguette_un: "scale-[30%] 2xl:translate-x-[162%] lg:translate-x-[98%] 2xl:translate-y-[75%] lg:translate-y-[50%] translate-x-[150%] translate-y-[75%] rotate-[90deg] z-10 absolute duration-700",
+    vanttan: "scale-[20%] lg:translate-x-[178%] lg:translate-y-[45%] 2xl:translate-x-[267%] 2xl:translate-y-[65%] z-0 absolute duration-700",
+  });
 
   useEffect(() => {
+<<<<<<< HEAD
     setTimeout(() => {
       setIsLoad(false)
       setValia(" hidden lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700")
@@ -30,23 +34,60 @@ function App() {
       <div>
         <img className="absolute top-[20%] left-[5%]" src="/src/assets/ondulations.svg" alt=""/>
       </div>
-      <div className={
-        isLoad ? 'opacity-0 duration-1000 ease-in-out' : 'opacity-100 duration-1000 ease-in-out absolute top-0 right-0 h-full -z-50'
-      }>
-        <img className="w-auto h-auto lg:h-full lg:w-full z-0" src="/images/back.png" alt="" />
-      </div>
+=======
+    document.body.style.overflow = "hidden";
 
+    const updateAnimations = () => {
+      setIsLoad(false);
+      document.body.style.overflow = "auto";
+      setAnimationStyles({
+        valia: "lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700",
+        baguette_deux: "lg:scale-[65%] 2xl:scale-[100%] lg:translate-x-[115%] lg:translate-y-[20%] 2xl:translate-x-[165%] 2xl:translate-y-[30%] z-10 absolute duration-700",
+        baguette_un: "lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[155%] lg:translate-x-[117%] lg:translate-y-[27%] translate-x-[168%] translate-y-[40%] z-10 absolute duration-700",
+        vanttan: "lg:scale-[65%] 2xl:scale-[100%] 2xl:translate-x-[258%] lg:translate-x-[190%] 2xl:translate-y-[45%] translate-x-[260%] lg:translate-y-[25%] z-0 absolute duration-700",
+      });
+    };
+
+    const animationTimeout = setTimeout(updateAnimations, 3000);
+
+    return () => clearTimeout(animationTimeout);
+  }, []);
+
+  return (
+    <div className='relative gilroy'>
+      <AnimatedCursor
+        innerSize={15}
+        outerSize={20}
+        color='240,186,113'
+        outerAlpha={0.5}
+        innerScale={1.5}
+        outerScale={3}
+        clickables={[
+          'button'
+        ]}
+      />
+      {/* loading */}
+>>>>>>> a394648cd8368e5c96fc01154f848802fbf9d34a
+      <div className={
+        isLoad ? 'opacity-100 duration-1000 ease-in-out h-screen flex justify-center items-center translate-y-52' : 'hidden'
+      }>
+<<<<<<< HEAD
+        <img className="w-auto h-auto lg:h-full lg:w-full z-0" src="/images/back.png" alt="" />
+=======
+        <Loading />
+>>>>>>> a394648cd8368e5c96fc01154f848802fbf9d34a
+      </div>
       {/* images */}
-      <div className="absolute -z-50 top-0 left-0 w-full h-screen translate-y-10">
+      <div className="absolute -z-40 top-0 left-0 w-full h-screen translate-y-10">
         <div className='h-full relative'>
           <div className={isLoad ? 'hidden -translate-x-[23%] duration-700' : 'hidden translate-x-0 duration-700'}>
             {/* vilia */}
-            <img className={valia} src="/images/vilia.png" alt="" />
+            <img className={animationStyles.valia} src="/images/vilia.png" alt="" />
             {/* bagette */}
-            <img id="baguette_one" className={baguette_deux} src="/images/baguette 2.png" alt="" />
-            <img id="baguette_two" className={baguette_un} src="/images/baguette 1.png" alt="" />
+            <img id="baguette_one" className={animationStyles.baguette_deux} src="/images/baguette 2.png" alt="" />
+            <img id="baguette_two" className={animationStyles.baguette_un} src="/images/baguette 1.png" alt="" />
             {/* vantan */}
-            <img id="vantan" className={vanttan} src="/images/Vanttan.png" alt="" />
+            <img id="vantan" className={animationStyles.vanttan} src="/images/Vanttan.png" alt="" />
 
             {/* Others */}
             <div id="others" className={isLoad ? "hidden opacity-0 duration-1000 ease-in-out" : "hidden opacity-100 duration-1000 ease-in-out"}>
@@ -62,7 +103,18 @@ function App() {
       </div>
 
       {/* content principal */}
-      <div className={isLoad ? "opacity-0 duration-1000 ease-in-out" : "opacity-100 duration-1000 ease-in-out"}>
+      <div className={isLoad ? "opacity-0 duration-[1500ms] ease-in-out" : "opacity-100 duration-[1500ms] ease-in-out absolute top-0 right-0 h-full -z-50"}>
+        <img className="h-full w-full z-0" src="/images/back.png" alt="" />
+      </div>
+      <div className={isLoad ? "opacity-0 duration-[1500ms] ease-in-out" : "opacity-100 duration-[1500ms] ease-in-out"}>
+        {/* nap */}
+        <div>
+          <img className='opacity-100 duration-1000 ease-in-out absolute bottom-[20%] scale-110' src="/images/nap.png" alt="" />
+        </div>
+        {/* ondulation */}
+        <div>
+          <img className='opacity-100 duration-1000 ease-in-out absolute top-[20%] left-[5%]' src="/src/assets/ondulations.svg" alt="" />
+        </div>
         <div className="absolute w-full">
           <Navbar />
         </div>

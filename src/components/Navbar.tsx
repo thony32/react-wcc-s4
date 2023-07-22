@@ -53,7 +53,7 @@ export default function Navbar() {
               </label>
             </div>
           </div>
-          <div className="hidden lg:flex mr-28 gap-20">
+          <div className="hidden lg:flex lg:mr-10 2xl:mr-28 gap-12 2xl:gap-20">
             <button id="why" className="p-2 flex items-center gap-1 group nav opacity-70 hover:opacity-100 duration-150">
               <span>Why Fode</span>
               <svg className="w-4 fill-current group-hover:-translate-y-1 duration-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,9 +86,9 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-          <div className="flex gap-3">
-            <button className="btn btn-outline border-white text-white hover:text-[#ffdb81] hover:bg-transparent hover:border-[#ffdb81] rounded-full capitalize px-6">Sign up</button>
-            <button className="btn rounded-full bg-[#ffdb80] hover:bg-[#ffdb81] capitalize px-7 ">Login</button>
+          <div className="flex gap-3 lg:translate-x-5 2xl:translate-x-0">
+            <button className="btn btn-outline border-white text-white hover:text-[#ffdb81] hover:bg-transparent hover:border-[#ffdb81] rounded-full capitalize 2xl:px-6">Sign up</button>
+            <button className="btn rounded-full bg-[#ffdb80] hover:bg-[#ffdb81] capitalize 2xl:px-6">Login</button>
           </div>
         </div>
       </div>
