@@ -61,28 +61,7 @@ export default function Chef() {
         <div className="lg:text-lg 2xl:text-3xl">Chef's Recommendation</div>
         <div className="flex gap-2 lg:text-lg 2xl:text-3xl font-bold">
           See the menu types
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            zoomAndPan="magnify"
-            viewBox="0 0 75 37.5"
-            className="w-9 h-9"
-            preserveAspectRatio="xMidYMid meet"
-            version="1.0"
-          >
-            <defs>
-              <clipPath id="9ff828e112">
-                <path
-                  d="M 26.445312 0 L 48.648438 0 L 48.648438 37 L 26.445312 37 Z M 26.445312 0 "
-                  clipRule="nonzero"
-                />
-              </clipPath>
-              <clipPath id="3ea57380e6">
-                <path
-                  d="M 26.351562 17.792969 L 47.816406 17.792969 L 47.816406 19.273438 L 26.351562 19.273438 Z M 26.351562 17.792969 "
-                  clipRule="nonzero"
-                />
-              </clipPath>
-            </defs>
+          <svg viewBox="0 0 75 37.5" className="w-9 h-9 group-hover:translate-x-2 duration-300">
             <g clipPath="url(#9ff828e112)">
               <path
                 fill="#000000"
