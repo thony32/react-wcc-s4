@@ -160,7 +160,7 @@ export default function Base() {
         </div>
 
       </div>
-      <div className="flex justify-between lg:gap-10 lg:p-5 2xl:gap-16 2xl:gap-16 -translate-y-[10%]">
+      <div className="flex justify-between lg:gap-10 lg:p-5 2xl:p-8 2xl:gap-16">
         <Chef />
 
         <div className="flex items-center lg:translate-x-[110%] 2xl:translate-x-[150%] ">
