@@ -53,7 +53,7 @@ export default function Navbar() {
               </label>
             </div>
           </div>
-          <div className="hidden lg:flex mr-28 gap-20">
+          <div className="hidden lg:flex lg:mr-10 2xl:mr-28 gap-12 2xl:gap-20">
             <button id="why" className="p-2 flex items-center gap-1 group nav opacity-70 hover:opacity-100 duration-150">
               <span>Why Fode</span>
               <svg className="w-4 fill-current group-hover:-translate-y-1 duration-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,15 +66,15 @@ export default function Navbar() {
               <svg className="absolute top-0 left-0" width="15" viewBox="0 0 30 30.000001" height="15">
                 <defs>
                   <clipPath id="e0f756c524">
-                    <path d="M 0.484375 0 L 29.515625 0 L 29.515625 29.03125 L 0.484375 29.03125 Z M 0.484375 0 " clip-rule="nonzero" />
+                    <path d="M 0.484375 0 L 29.515625 0 L 29.515625 29.03125 L 0.484375 29.03125 Z M 0.484375 0 " clipRule="nonzero" />
                   </clipPath>
                 </defs>
-                <g clip-path="url(#e0f756c524)">
+                <g clipPath="url(#e0f756c524)">
                   <path
                     fill="#151515"
                     d="M 29.515625 1.445312 C 29.515625 2.242188 28.867188 2.890625 28.070312 2.890625 C 14.453125 2.890625 3.375 13.96875 3.375 27.585938 C 3.375 28.386719 2.726562 29.03125 1.929688 29.03125 C 1.132812 29.03125 0.484375 28.386719 0.484375 27.585938 C 0.484375 23.863281 1.210938 20.25 2.652344 16.847656 C 4.042969 13.5625 6.03125 10.613281 8.5625 8.082031 C 11.09375 5.550781 14.046875 3.5625 17.328125 2.171875 C 20.730469 0.730469 24.34375 0.00390625 28.066406 0.00390625 C 28.867188 0 29.515625 0.648438 29.515625 1.445312 Z M 29.515625 1.445312 "
-                    fill-opacity="1"
-                    fill-rule="nonzero"
+                    fillOpacity="1"
+                    fillRule="nonzero"
                   />
                 </g>
               </svg>
@@ -86,9 +86,9 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-          <div className="flex gap-3">
-            <button className="btn btn-outline border-white text-white hover:text-[#ffdb81] hover:bg-transparent hover:border-[#ffdb81] rounded-full capitalize px-6">Sign up</button>
-            <button className="btn rounded-full bg-[#ffdb80] hover:bg-[#ffdb81] capitalize px-7 ">Login</button>
+          <div className="flex gap-3 lg:translate-x-5 2xl:translate-x-0">
+            <button className="btn btn-outline border-white text-white hover:text-[#ffdb81] hover:bg-transparent hover:border-[#ffdb81] rounded-full capitalize 2xl:px-6">Sign up</button>
+            <button className="btn rounded-full bg-[#ffdb80] hover:bg-[#ffdb81] capitalize 2xl:px-6">Login</button>
           </div>
         </div>
       </div>
