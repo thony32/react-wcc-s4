@@ -3,7 +3,7 @@ import "../style/navbar.css";
 export default function Navbar() {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar px-[5%] py-10">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -19,8 +19,11 @@ export default function Navbar() {
           </a>
         </div>
         <div className="navbar-end">
-          <a className="hover:border-t-2 hover:border-l-2 hover:rounded-tl-lg p-2 mx-4 rounded-full">Item 1</a>
-          <a className="hover:border-t-2 hover:border-l-2 hover:rounded-tl-lg p-2 mx-10">Item 1</a>
+          <div className="hidden lg:flex">
+          <a className="hover:border-t-2 hover:border-l-2 hover:rounded-tl-lg p-2 mx-4 rounded-full">Why Fode?</a>
+          <a className="hover:border-t-2 hover:border-l-2 hover:rounded-tl-lg p-2 mx-4">About</a>
+          <a className="hover:border-t-2 hover:border-l-2 hover:rounded-tl-lg p-2 mx-12">Menu</a>
+          </div>
           <a className="btn btn-outline rounded-full hover:bg-[#ffdb80] hover:border-[#ffdb80] hover:text-black lowercase capitalize px-5 mx-4">Sign up</a>
           <a className="btn rounded-full bg-[#ffdb80] hover:bg-[#ffdb81] lowercase capitalize px-7 ">Login</a>
         </div>
