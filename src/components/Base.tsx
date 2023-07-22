@@ -57,6 +57,7 @@ export default function Base() {
                         </div>
                     </div>
                 </div>
+                {/* images */}
                 <div className="bg-red-500">
                     Image
                 </div>
