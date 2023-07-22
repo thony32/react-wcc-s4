@@ -1,6 +1,6 @@
 export default function Chef() {
   return (
-    <div className="h-40 relative flex items-center lg:gap-7 2xl:gap-8 p-8 border-l-4 border-dashed border-l-grey-400 rounded-l-full group">
+    <div className="h-40 relative flex items-center lg:gap-7 2xl:gap-8 p-8 border-l-4 border-dashed border-l-black lg:border-l-gray-400 rounded-l-full group">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="absolute top-0 right-0 w-6 h-6"
@@ -58,7 +58,7 @@ export default function Chef() {
         <div className="text-xl lg:text-3xl">Chef's Recommendation</div>
         <div className="flex gap-2 text-xl lg:text-3xl font-bold">
           See the menu types
-          <svg viewBox="0 0 75 37.5" className="w-9 h-9 rotate-90 lg:rotate-0 group-hover:translate-x-2 duration-300">
+          <svg viewBox="0 0 75 37.5" className="w-9 h-9 rotate-90 lg:rotate-0 group-hover:translate-y-2 lg:group-hover:translate-x-2 duration-300">
             <g clipPath="url(#9ff828e112)">
               <path
                 fill="#000000"

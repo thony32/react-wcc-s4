@@ -36,16 +36,16 @@ export default function Navbar() {
   })
   return (
     <div>
-      <div className="hidden lg:block navbar px-[4%] py-10">
+      <div className="navbar px-[10%] lg:px-[4%] py-10">
         <div className="navbar-start">
-          <a className="font-bold text-4xl">
+          <a className="text-white lg:text-current font-bold text-3xl lg:text-4xl">
             Fode<span className="text-[#ffdb80] text-4xl font-bold">.</span>
           </a>
         </div>
         <div className="navbar-end">
           <div className="search-container mr-5">
             <div>
-              <input className="search expandright border-b-2 border-current" id="searchright" type="search" name="q" placeholder="Search" />
+              <input className="search expandright border-b-2 border-current text-white" id="searchright" type="search" name="q" placeholder="Search" />
               <label className="button searchbutton flex justify-center" htmlFor="searchright">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 text-current">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -86,7 +86,7 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-          <div className="flex gap-3 lg:translate-x-5 2xl:translate-x-0">
+          <div className="flex gap-3 lg:gap-3 lg:translate-x-5 2xl:translate-x-0">
             <button className="btn btn-outline border-white text-white hover:text-[#ffdb81] hover:bg-transparent hover:border-[#ffdb81] rounded-full capitalize 2xl:px-6">Sign up</button>
             <button className="btn rounded-full bg-[#ffdb80] hover:bg-[#ffdb81] capitalize 2xl:px-6">Login</button>
           </div>

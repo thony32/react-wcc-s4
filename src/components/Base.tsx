@@ -70,9 +70,9 @@ export default function Base() {
 
             <div className="space-y-6 ">
               <div className="space-y-3 ">
-                <h1 className="text-xl lg:text-5xl 2xl:text-7xl ">Italian Pasta</h1>
+                <h1 className="text-xl lg:text-6xl 2xl:text-7xl ">Italian Pasta</h1>
                 <div className="h-20 w-[750px]">
-                  <Typed className="text-3xl lg:text-5xl 2xl:text-7xl font-extrabold" strings={["With special sauce"]} typeSpeed={100} backSpeed={100} loop></Typed>
+                  <Typed className="text-3xl lg:text-6xl 2xl:text-7xl font-extrabold" strings={["With special sauce"]} typeSpeed={100} backSpeed={100} loop></Typed>
                 </div>
               </div>
               <p className="text-lg lg:text-2xl text-black/50">
@@ -131,10 +131,10 @@ export default function Base() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between lg:gap-10 2xl:gap-16 px-[8%] -translate-y-16">
+      <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-10 2xl:gap-16 px-[5%] -translate-y-16">
         <Chef />
 
-        <div className="hidden lg:flex items-center translate-x-[150%] ">
+        <div className="hidden lg:flex items-center lg:translate-x-[80%] 2xl:translate-x-[150%] ">
           <span className="p-2 text-white font-semibold rotate-90 ... -translate-y-[150%] ">scroll</span>
           <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-16 animate-bounce infinite" zoomAndPan="magnify" viewBox="0 0 37.5 74.999998" preserveAspectRatio="xMidYMid meet" version="1.0">
             <defs>
