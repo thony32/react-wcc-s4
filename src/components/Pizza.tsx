@@ -86,7 +86,7 @@ export default function Pizza() {
           </div>
 
           <div className="flex justify-center items-center">
-            <div className="flex items-center justify-center gap-2 btn lg:btn-sm 2xl:btn-md bg-[#ffdb80] rounded-full lowercase">
+            <button className="flex items-center justify-center gap-2 btn lg:btn-sm 2xl:btn-md bg-[#ffdb80] rounded-full lowercase">
               <div>
 
                 <svg
@@ -104,7 +104,7 @@ export default function Pizza() {
                 </svg>
               </div>
               <div className="text-center lg:text-sm 2xl:text-lg">30 dk.</div>
-            </div>
+            </button>
           </div>
         </div>
       </div>

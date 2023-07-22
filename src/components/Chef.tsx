@@ -1,6 +1,6 @@
 export default function Chef() {
   return (
-    <div className="h-40 relative flex items-center lg:gap-7 2xl:gap-8 p-8 border-l-4 border-dashed border-l-grey-400 rounded-l-full lg:ml-[50px] 2xl:ml-[100px] cursor-default group">
+    <div className="h-40 relative flex items-center lg:gap-7 2xl:gap-8 p-8 border-l-4 border-dashed border-l-grey-400 rounded-l-full group">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="absolute top-0 right-0 w-6 h-6"
