@@ -19,6 +19,34 @@ export default function Base() {
             setCheck("w-5 text-[#151515] absolute duration-300  translate-y-5 ease-in-out opacity-0")
         }, 2000)
     }
+
+    // * animate three line
+    const bar_one = document.getElementById("bar_one")
+    const bar_two = document.getElementById("bar_two")
+    const bar_three = document.getElementById("bar_three")
+
+    const [c_bar_one, setC_bar_one] = useState("w-12 h-2 rounded-2xl bg-[#F0BA71] cursor-pointer duration-300")
+    const [c_bar_two, setC_bar_two] = useState("w-6 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300")
+    const [c_bar_three, setC_bar_three] = useState("w-3 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300")
+
+    bar_one?.addEventListener("mouseover", () => {
+        setC_bar_one("w-12 h-2 rounded-2xl bg-[#F0BA71] cursor-pointer duration-300")
+        setC_bar_two("w-6 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300")
+        setC_bar_three("w-3 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300")
+    })
+
+    bar_two?.addEventListener("mouseover", () => {
+        setC_bar_one("w-3 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300")
+        setC_bar_two("w-12 h-2 rounded-2xl bg-[#F0BA71] cursor-pointer duration-300")
+        setC_bar_three("w-3 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300")
+    })
+
+    bar_three?.addEventListener("mouseover", () => {
+        setC_bar_one("w-3 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300")
+        setC_bar_two("w-6 h-2 rounded-2xl bg-gray-300 cursor-pointer duration-300")
+        setC_bar_three("w-12 h-2 rounded-2xl bg-[#F0BA71] cursor-pointer duration-300")
+    })
+
     return (
         <div>
             <div className="grid grid-cols-2 h-[90vh] px-[15%]">
@@ -59,7 +87,7 @@ export default function Base() {
                                 </CountUp>
                             </div>
                             <div className="col-span-4">
-                                <button onClick={handleBuy} className="bg-[#151515] active:scale-105 p-5 rounded-full duration-150 flex items-center gap-5 w-1/2 group cursor-pointer">
+                                <button onClick={handleBuy} className="bg-[#151515] hover:ring hover:ring-[#151515] hover:ring-offset-2 active:scale-105 p-5 rounded-full duration-150 flex items-center gap-5 w-1/2 group cursor-pointer">
                                     <span className="bg-[#F0BA71] flex items-center justify-center p-3 duration-100 rounded-full ring-1 ring-white">
                                         <svg className={shop} viewBox="704.081 796 200 200">
                                             <path d="M891.876,977.909l-6.938-125.811h-34.661v-10.157c0-25.333-20.608-45.941-45.94-45.941s-45.94,20.609-45.94,45.941v10.157
@@ -80,9 +108,9 @@ export default function Base() {
                             </div>
                         </div>
                         <div className="flex gap-2">
-                            <div className="w-10 h-1 rounded-2xl bg-[#F0BA71]"></div>
-                            <div className="w-5 h-1 rounded-2xl bg-gray-300"></div>
-                            <div className="w-2 h-1 rounded-2xl bg-gray-300"></div>
+                            <div id="bar_one" className={c_bar_one}></div>
+                            <div id="bar_two" className={c_bar_two}></div>
+                            <div id="bar_three" className={c_bar_three}></div>
                         </div>
                     </div>
                 </div>
