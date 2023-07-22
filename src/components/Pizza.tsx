@@ -2,8 +2,8 @@ import CountUp from "react-countup";
 import pizza from "../assets/pizza.png";
 export default function Pizza() {
   return (
-    <div className="h-full lg:w-[600px] lg:h-[220px]">
-      <div className="flex border-dashed border-slate-950 border border-b-0 rounded-t-2xl justify-between p-4">
+    <div className="h-full lg:w-[600px] lg:h-[220px] text-white">
+      <div className="flex border-dashed border-white border border-b-0 rounded-t-2xl justify-between p-4">
         {/* Discount coupon */}
         <div className="p-4">
           <span className="">Discount Coupon</span>
@@ -35,7 +35,7 @@ export default function Pizza() {
               </defs>
               <g clip-path="url(#a17eb4f0a0)">
                 <path
-                  fill="#000000"
+                  fill="#ffffff"
                   d="M 44.128906 36.964844 L 25.804688 18.5625 L 44.257812 0.0351562 L 48.007812 3.800781 L 33.308594 18.5625 L 47.882812 33.199219 L 44.128906 36.964844 "
                   fill-opacity="1"
                   fill-rule="nonzero"
@@ -43,7 +43,7 @@ export default function Pizza() {
               </g>
               <g clip-path="url(#82fd7f86fb)">
                 <path
-                  fill="#000000"
+                  fill="#ffffff"
                   d="M 46.914062 17.792969 L 27.253906 17.792969 C 26.867188 17.792969 26.550781 18.121094 26.550781 18.53125 C 26.550781 18.941406 26.867188 19.273438 27.253906 19.273438 L 46.914062 19.273438 C 47.300781 19.273438 47.617188 18.941406 47.617188 18.53125 C 47.617188 18.121094 47.300781 17.792969 46.914062 17.792969 Z M 46.914062 17.792969 "
                   fill-opacity="1"
                   fill-rule="nonzero"
@@ -81,7 +81,7 @@ export default function Pizza() {
               </defs>
               <g clip-path="url(#9ff828e112)">
                 <path
-                  fill="#000000"
+                  fill="#ffffff"
                   d="M 30.320312 0.0390625 L 48.644531 18.441406 L 30.191406 36.972656 L 26.441406 33.203125 L 41.140625 18.441406 L 26.566406 3.808594 L 30.320312 0.0390625 "
                   fill-opacity="1"
                   fill-rule="nonzero"
@@ -89,7 +89,7 @@ export default function Pizza() {
               </g>
               <g clip-path="url(#3ea57380e6)">
                 <path
-                  fill="#000000"
+                  fill="#ffffff"
                   d="M 46.914062 17.792969 L 27.253906 17.792969 C 26.867188 17.792969 26.550781 18.121094 26.550781 18.53125 C 26.550781 18.941406 26.867188 19.273438 27.253906 19.273438 L 46.914062 19.273438 C 47.300781 19.273438 47.617188 18.941406 47.617188 18.53125 C 47.617188 18.121094 47.300781 17.792969 46.914062 17.792969 Z M 46.914062 17.792969 "
                   fill-opacity="1"
                   fill-rule="nonzero"
@@ -101,7 +101,7 @@ export default function Pizza() {
         </div>
       </div>
       {/* Pizza */}
-      <div className="p-4 border border-dashed border-slate-950 rounded-2xl -translate-y-[10%]">
+      <div className="p-4 border border-dashed border-white rounded-2xl -translate-y-[10%]">
         <div className="grid grid-cols-5">
           <div>
             <img src={pizza} alt="" className="w-20" />
