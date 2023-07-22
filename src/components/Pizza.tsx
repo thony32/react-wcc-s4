@@ -53,7 +53,7 @@ export default function Pizza() {
             Prev.
           </div>
           {/* Next */}
-          <div className="flex scale-125 font-semibold">
+          <div className="flex scale-105 font-semibold">
             Next
             <svg
               xmlns="http://www.w3.org/2000/svg"

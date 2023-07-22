@@ -1,3 +1,4 @@
+import Chef from "./Chef";
 import Pizza from "./Pizza";
 import CountUp from "react-countup";
 
@@ -61,7 +62,8 @@ export default function Base() {
                     Image
                 </div>
             </div>
-            <div>
+            <div className="flex justify-between p-10">
+                <Chef />
                 <Pizza />
             </div>
         </div>
