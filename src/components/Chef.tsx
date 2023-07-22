@@ -1,6 +1,6 @@
 export default function Chef() {
   return (
-    <div className="flex items-center gap-8 p-8 border-l-4 border-tr-4 border-dashed border-grey-400 rounded-full">
+    <div className="flex items-center gap-8 p-8 border-l-4 border-t-4  border-l-dashed border border-l-grey-400 rounded-l-full">
       <div>sary</div>
       <div>
         <div className="text-3xl">Chef's Recommendation</div>
