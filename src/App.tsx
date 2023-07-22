@@ -23,7 +23,11 @@ function App() {
   })
 
   return (
-    <div className='gilroy relative'>
+    <div className='relative'>
+      {/* nap */}
+      <div>
+        <img className='absolute bottom-[20%] scale-110' src="/images/nap.png" alt="" />
+      </div>
       <div className={
         isLoad ? 'opacity-0 duration-1000 ease-in-out' : 'opacity-100 duration-1000 ease-in-out absolute top-0 right-0 h-full -z-50'
       }>
