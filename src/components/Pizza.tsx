@@ -78,7 +78,7 @@ export default function Pizza() {
             >
 
               {({ countUpRef }) => (
-                <div className="text-2xl lg:text-3xl  ">
+                <div className="lg:text-2xl 2xl:text-3xl  ">
                   $<span ref={countUpRef} className="animate-bounce infinite" />
                 </div>
               )}
