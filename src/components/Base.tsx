@@ -3,8 +3,8 @@ import CountUp from "react-countup";
 
 export default function Base() {
     return (
-        <div className="h-screen">
-            <div className="grid grid-cols-2 h-[75vh] px-[15%]">
+        <div>
+            <div className="grid grid-cols-2 h-[90vh] px-[15%]">
                 <div className="flex items-center">
                     <div className="space-y-10">
                         <div className="space-y-6">
@@ -57,10 +57,7 @@ export default function Base() {
                         </div>
                     </div>
                 </div>
-                {/* images */}
-                <div className="bg-red-500">
-                    Image
-                </div>
+                
             </div>
             <div>
                 <Pizza />
