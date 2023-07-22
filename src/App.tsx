@@ -1,19 +1,62 @@
+import { useEffect, useState } from 'react'
 import Base from './components/Base'
 import Navbar from './components/Navbar'
 
 
 function App() {
+  const [isLoad, setIsLoad] = useState(true)
+
+  const [valia , setValia] = useState("scale-[30%] translate-x-[200%] translate-y-[25%] absolute duration-700")
+  const [baguette_deux , setBaguette_deux] = useState("scale-[30%] translate-x-[160%] translate-y-[75%] rotate-[20deg] z-10 absolute duration-700")
+  const [baguette_un , setBaguette_un] = useState("scale-[30%] translate-x-[150%] translate-y-[75%] rotate-[90deg] z-10 absolute duration-700")
+  const [vanttan , setVanttan] = useState("scale-[20%] translate-x-[255%] translate-y-[65%] z-0 absolute duration-700")
+
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoad(false)
+      setValia("translate-x-[200%] translate-y-[25%] absolute duration-700")
+      setBaguette_deux("translate-x-[165%] translate-y-[30%] z-10 absolute duration-700")
+      setBaguette_un("translate-x-[168%] translate-y-[40%] z-10 absolute duration-700")
+      setVanttan("translate-x-[260%] translate-y-[45%] z-0 absolute duration-700")
+    }, 2000)
+  })
 
   return (
     <div className='gilroy relative'>
-      {/* <div className='absolute top-0 right-0 h-screen z-0'>
+      <div className='absolute top-0 right-0 h-full z-0'>
         <img className="h-full w-full z-0" src="/images/back.png" alt="" />
-      </div> */}
-      <div className='absolute w-full'>
-        <Navbar />
       </div>
-      <div className='z-50'>
-        <Base />
+
+      {/* images */}
+      <div className="absolute top-0 left-0 w-full h-screen">
+        <div className='h-full relative'>
+          <div className={isLoad ? '-translate-x-[23%] duration-700' : 'translate-x-0 duration-700'}>
+            {/* vilia */}
+            <img className={valia} src="/images/vilia.png" alt="" />
+            {/* bagette */}
+            <img className={baguette_deux} src="/public/images/baguette 2.png" alt="" />
+            <img className={baguette_un} src="/public/images/baguette 1.png" alt="" />
+            {/* vantan */}
+            <img className={vanttan} src="/images/Vanttan.png" alt="" />
+          </div>
+        </div>
+        {/* others */}
+        <div>
+
+        </div>
+      </div>
+
+      {/* content principal */}
+      <div className={
+        isLoad ? 'opacity-0 duration-1000 ease-in-out' : 'opacity-100 duration-1000 ease-in-out'
+      }>
+        <div className='absolute w-full'>
+          <Navbar />
+        </div>
+        <div className='z-50'>
+          <Base />
+        </div>
       </div>
     </div>
   )
