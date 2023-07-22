@@ -6,7 +6,9 @@ function App() {
 
   return (
     <div className='gilroy'>
-      <Navbar />
+      <div className='absolute'>
+        <Navbar />
+      </div>
       <Base />
     </div>
   )
