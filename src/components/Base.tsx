@@ -60,7 +60,7 @@ export default function Base() {
                 </div>
                 
             </div>
-            <div className="flex justify-between gap-16 p-16 absolute bottom-0 left-0 right-0">
+            <div className="flex justify-between gap-16 p-16 -translate-y-[40%]">
                 <Chef />
                 <div>Scroll</div>
                 <Pizza />
