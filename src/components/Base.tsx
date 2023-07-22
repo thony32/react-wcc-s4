@@ -179,30 +179,30 @@ export default function Base() {
               <clipPath id="aafcfa17d7">
                 <path
                   d="M 0 52.992188 L 37.007812 52.992188 L 37.007812 74.503906 L 0 74.503906 Z M 0 52.992188 "
-                  clip-rule="nonzero"
+                  clipRule="nonzero"
                 />
               </clipPath>
               <clipPath id="1316e9b1b7">
                 <path
                   d="M 16.347656 1 L 20.847656 1 L 20.847656 74 L 16.347656 74 Z M 16.347656 1 "
-                  clip-rule="nonzero"
+                  clipRule="nonzero"
                 />
               </clipPath>
             </defs>
-            <g clip-path="url(#aafcfa17d7)">
+            <g clipPath="url(#aafcfa17d7)">
               <path
                 fill="#ffffff"
                 d="M 37.460938 56.921875 L 18.8125 75.488281 L 0.0351562 56.792969 L 3.851562 52.988281 L 18.8125 67.886719 L 33.640625 53.117188 L 37.460938 56.921875 "
-                fill-opacity="1"
-                fill-rule="nonzero"
+                fillOpacity="1"
+                fillRule="nonzero"
               />
             </g>
-            <g clip-path="url(#1316e9b1b7)">
+            <g clipPath="url(#1316e9b1b7)">
               <path
                 fill="#ffffff"
                 d="M 16.347656 3.660156 L 16.347656 70.894531 C 16.347656 72.21875 17.351562 73.292969 18.597656 73.292969 C 19.839844 73.292969 20.847656 72.21875 20.847656 70.894531 L 20.847656 3.660156 C 20.847656 2.332031 19.839844 1.257812 18.597656 1.257812 C 17.351562 1.257812 16.347656 2.332031 16.347656 3.660156 Z M 16.347656 3.660156 "
-                fill-opacity="1"
-                fill-rule="nonzero"
+                fillOpacity="1"
+                fillRule="nonzero"
               />
             </g>
           </svg>
