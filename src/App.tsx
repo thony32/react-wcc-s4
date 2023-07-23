@@ -17,14 +17,14 @@ function App() {
     document.body.style.overflow = "hidden";
 
     const updateAnimations = () => {
-      setIsLoad(false);
+      setIsLoad(true);
       document.body.style.overflow = "auto";
-      setAnimationStyles({
-        valia: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%] translate-x-[0%] translate-y-[25%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700",
-        baguette_deux: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%] translate-x-[5%] translate-y-[80%] lg:translate-x-[115%] lg:translate-y-[20%] 2xl:translate-x-[165%] 2xl:translate-y-[30%] z-10 absolute duration-700",
-        baguette_un: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%]  translate-x-[5%] translate-y-[83%] 2xl:translate-x-[155%] lg:translate-x-[117%] lg:translate-y-[27%] z-10 absolute duration-700",
-        vanttan: "scale-[40%] lg:scale-[65%] 2xl:scale-[100%]  translate-x-[0%] translate-y-[25%] lg:translate-y-[25%] 2xl:translate-x-[258%] lg:translate-x-[190%] 2xl:translate-y-[45%] z-0 absolute duration-700",
-      });
+      // setAnimationStyles({
+      //   valia: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%] translate-x-[0%] translate-y-[25%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700",
+      //   baguette_deux: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%] translate-x-[5%] translate-y-[80%] lg:translate-x-[115%] lg:translate-y-[20%] 2xl:translate-x-[165%] 2xl:translate-y-[30%] z-10 absolute duration-700",
+      //   baguette_un: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%]  translate-x-[5%] translate-y-[83%] 2xl:translate-x-[155%] lg:translate-x-[117%] lg:translate-y-[27%] z-10 absolute duration-700",
+      //   vanttan: "scale-[40%] lg:scale-[65%] 2xl:scale-[100%]  translate-x-[0%] translate-y-[25%] lg:translate-y-[25%] 2xl:translate-x-[258%] lg:translate-x-[190%] 2xl:translate-y-[45%] z-0 absolute duration-700",
+      // });
       console.log(1.618)
     };
 
@@ -40,7 +40,8 @@ function App() {
       </div>
       <AnimatedCursor innerSize={15} outerSize={20} color="240,186,113" outerAlpha={0.5} innerScale={1.5} outerScale={3} clickables={["button", ".fode"]} />
       {/* loading */}
-      <div className={isLoad ? "opacity-100 duration-1000 ease-in-out h-screen flex justify-center items-center translate-y-52" : "hidden"}>
+      <div className={isLoad ? "opacity-100 duration-1000 ease-in-out h-screen flex justify-center items-center" : "hidden"}>
+        <img src="/images/loader imgs/burger.png" alt="" className="absolute"/>
         <Loading />
       </div>
       {/* images */}
@@ -72,14 +73,14 @@ function App() {
       </div>
       {/* Mobile waves */}
       <div className="absolute block sm:hidden w-full">
-        <img className="w-[100vw] scale-y-[120%]" src="/src/assets/mobilewave.svg" alt="" />
+        <img className="w-[100vw] scale-y-[120%]" src="/images/mobilewave.svg" alt="" />
       </div>
       <div className={isLoad ? "opacity-0 hidden duration-[1500ms] ease-in-out" : "opacity-100 duration-[1500ms] ease-in-out"}>
         <div>
           <img className="opacity-100 duration-1000 ease-in-out absolute bottom-[20%] -left-[5%] sm:left-0 scale-75 sm:scale-110" src="/images/nap.png" alt="" />
         </div>
         <div>
-          <img className="opacity-100 duration-1000 ease-in-out absolute top-[20%] lg:left-[2%] 2xl:left-[5%] 2xl:w-40 lg:w-16 w-10" src="/src/assets/ondulations.svg" alt="" />
+          <img className="opacity-100 duration-1000 ease-in-out absolute top-[20%] lg:left-[2%] 2xl:left-[5%] 2xl:w-40 lg:w-16 w-10" src="/images/ondulations.svg" alt="" />
         </div>
         <div className="absolute w-full">
           <Navbar />
