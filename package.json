@@ -17,7 +17,6 @@
     "react-countup": "^6.4.2",
     "react-cursor-follow": "^2.0.0",
     "react-dom": "^18.2.0",
-    "react-typed": "^1.2.0",
     "three": "^0.154.0"
   },
   "devDependencies": {
