@@ -42,7 +42,7 @@ function App() {
       {/* images */}
       <div className="absolute -z-40 top-0 left-0 w-full h-screen translate-y-10">
         <div className="h-full relative">
-          <div className={isLoad ? "hidden -translate-x-[23%] duration-700" : "hidden translate-x-0 duration-700"}>
+          <div className={isLoad ? "-translate-x-[23%] duration-700" : "translate-x-0 duration-700"}>
             {/* vilia */}
             <img className={animationStyles.valia} src="/images/vilia.png" alt="" loading="lazy" />
             {/* bagette */}
