@@ -16,6 +16,10 @@
     font-family: "gilroy", sans-serif;
   }
 
+  .gilroy-bold {
+    font-family: "gilroy-bold", sans-serif;
+  }
+
   .loader {
     display: block;
     width: 20px;
