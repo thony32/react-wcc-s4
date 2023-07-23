@@ -19,12 +19,12 @@ function App() {
     const updateAnimations = () => {
       setIsLoad(true);
       document.body.style.overflow = "auto";
-      // setAnimationStyles({
-      //   valia: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%] translate-x-[0%] translate-y-[25%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700",
-      //   baguette_deux: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%] translate-x-[5%] translate-y-[80%] lg:translate-x-[115%] lg:translate-y-[20%] 2xl:translate-x-[165%] 2xl:translate-y-[30%] z-10 absolute duration-700",
-      //   baguette_un: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%]  translate-x-[5%] translate-y-[83%] 2xl:translate-x-[155%] lg:translate-x-[117%] lg:translate-y-[27%] z-10 absolute duration-700",
-      //   vanttan: "scale-[40%] lg:scale-[65%] 2xl:scale-[100%]  translate-x-[0%] translate-y-[25%] lg:translate-y-[25%] 2xl:translate-x-[258%] lg:translate-x-[190%] 2xl:translate-y-[45%] z-0 absolute duration-700",
-      // });
+      setAnimationStyles({
+        valia: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%] translate-x-[0%] translate-y-[25%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700",
+        baguette_deux: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%] translate-x-[5%] translate-y-[80%] lg:translate-x-[115%] lg:translate-y-[20%] 2xl:translate-x-[165%] 2xl:translate-y-[30%] z-10 absolute duration-700",
+        baguette_un: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%]  translate-x-[5%] translate-y-[83%] 2xl:translate-x-[155%] lg:translate-x-[117%] lg:translate-y-[27%] z-10 absolute duration-700",
+        vanttan: "scale-[40%] lg:scale-[65%] 2xl:scale-[100%]  translate-x-[0%] translate-y-[25%] lg:translate-y-[25%] 2xl:translate-x-[258%] lg:translate-x-[190%] 2xl:translate-y-[45%] z-0 absolute duration-700",
+      });
       console.log(1.618)
     };
 
