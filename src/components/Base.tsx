@@ -63,7 +63,7 @@ export default function Base() {
 
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-5 h-[80vh] lg:h-[110vh] px-[5%] lg:px-[10%] 2xl:px-[15%]">
+      <div className="grid grid-cols-1 lg:grid-cols-5 h-[80vh] lg:h-[115vh] px-[5%] lg:px-[10%] 2xl:px-[15%]">
         <div className="lg:col-span-3  flex items-center ">
           <div className="space-y-10 w-full ">
 
