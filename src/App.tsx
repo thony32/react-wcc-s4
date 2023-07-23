@@ -7,10 +7,10 @@ import Loading from "./components/Loading";
 function App() {
   const [isLoad, setIsLoad] = useState(true);
   const [animationStyles, setAnimationStyles] = useState({
-    valia: "scale-[30%] translate-x-[25%] translate-y-[25%] lg:translate-x-[138%] lg:translate-y-[10%] 2xl:translate-x-[212%] 2xl:translate-y-[25%] absolute duration-700",
-    baguette_deux: "scale-[30%] translate-x-[25%] translate-y-[100%] lg:translate-x-[110%] lg:translate-y-[45%] 2xl:translate-x-[172%] 2xl:translate-y-[75%] rotate-[20deg] z-10 absolute duration-700",
-    baguette_un: "scale-[30%] translate-x-[20%] translate-y-[100%] 2xl:translate-x-[162%] lg:translate-x-[98%] 2xl:translate-y-[75%] lg:translate-y-[50%] rotate-[90deg] z-10 absolute duration-700",
-    vanttan: "scale-[20%] translate-x-[25%] translate-y-[50%] lg:translate-x-[178%] lg:translate-y-[45%] 2xl:translate-x-[267%] 2xl:translate-y-[65%] z-0 absolute duration-700",
+    valia: "scale-[30%] grayscale translate-x-[25%] translate-y-[25%] lg:translate-x-[138%] lg:translate-y-[10%] 2xl:translate-x-[212%] 2xl:translate-y-[25%] absolute duration-700",
+    baguette_deux: "scale-[30%] grayscale translate-x-[25%] translate-y-[100%] lg:translate-x-[110%] lg:translate-y-[45%] 2xl:translate-x-[172%] 2xl:translate-y-[75%] rotate-[20deg] z-10 absolute duration-700",
+    baguette_un: "scale-[30%] grayscale translate-x-[20%] translate-y-[100%] 2xl:translate-x-[162%] lg:translate-x-[98%] 2xl:translate-y-[75%] lg:translate-y-[50%] rotate-[90deg] z-10 absolute duration-700",
+    vanttan: "scale-[20%] grayscale translate-x-[25%] translate-y-[50%] lg:translate-x-[178%] lg:translate-y-[45%] 2xl:translate-x-[267%] 2xl:translate-y-[65%] z-0 absolute duration-700",
   });
 
   useEffect(() => {
@@ -20,10 +20,10 @@ function App() {
       setIsLoad(false);
       document.body.style.overflow = "auto";
       setAnimationStyles({
-        valia: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%] translate-x-[0%] translate-y-[25%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700",
-        baguette_deux: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%] translate-x-[5%] translate-y-[80%] lg:translate-x-[115%] lg:translate-y-[20%] 2xl:translate-x-[165%] 2xl:translate-y-[30%] z-10 absolute duration-700",
-        baguette_un: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%]  translate-x-[5%] translate-y-[83%] 2xl:translate-x-[155%] lg:translate-x-[117%] lg:translate-y-[27%] z-10 absolute duration-700",
-        vanttan: "scale-[40%] lg:scale-[65%] 2xl:scale-[100%]  translate-x-[0%] translate-y-[25%] lg:translate-y-[25%] 2xl:translate-x-[258%] lg:translate-x-[190%] 2xl:translate-y-[45%] z-0 absolute duration-700",
+        valia: "scale-[50%] grayscale-0 lg:scale-[65%] 2xl:scale-[100%] translate-x-[0%] translate-y-[25%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700",
+        baguette_deux: "scale-[50%] grayscale-0 lg:scale-[65%] 2xl:scale-[100%] translate-x-[5%] translate-y-[80%] lg:translate-x-[115%] lg:translate-y-[20%] 2xl:translate-x-[165%] 2xl:translate-y-[30%] z-10 absolute duration-700",
+        baguette_un: "scale-[50%] grayscale-0 lg:scale-[65%] 2xl:scale-[100%]  translate-x-[5%] translate-y-[83%] 2xl:translate-x-[155%] lg:translate-x-[117%] lg:translate-y-[27%] z-10 absolute duration-700",
+        vanttan: "scale-[40%] grayscale-0 lg:scale-[65%] 2xl:scale-[100%]  translate-x-[0%] translate-y-[25%] lg:translate-y-[25%] 2xl:translate-x-[258%] lg:translate-x-[190%] 2xl:translate-y-[45%] z-0 absolute duration-700",
       });
       console.log(1.618)
     };
