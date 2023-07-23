@@ -159,7 +159,7 @@ export default function Base() {
       </div>
       <div className="sm:flex relative grid grid-cols-1 space-y-10 sm:space-y-0 justify-between lg:gap-10 2xl:gap-16 px-[8%] translate-y-10 sm:-translate-y-16">
         <Chef />
-        <div className="flex flex-col absolute top-[25%] left-0 sm:relative items-center lg:translate-x-[110%] 2xl:translate-x-[150%] ">
+        <div className="flex absolute top-[25%] left-0 sm:relative items-center lg:translate-x-[110%] 2xl:translate-x-[150%] ">
           <span className="lg:p-0 2xl:p-2 text-xs sm:text-xl sm:text-white font-semibold rotate-90 -translate-y-[100%] ">
             scroll
           </span>
