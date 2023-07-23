@@ -2,8 +2,6 @@ import { useState } from "react";
 import Chef from "./Chef";
 import Pizza from "./Pizza";
 import CountUp from "react-countup";
-import Typed from "react-typed";
-import "react-typed/dist/animatedCursor.css";
 
 export default function Base() {
   // * for buy button
@@ -84,14 +82,14 @@ export default function Base() {
               <div className="space-y-3">
                 <h1 className="text-3xl text-center sm:text-start lg:text-5xl 2xl:text-7xl">Italian Pasta</h1>
                 <div className="text-center  sm:text-start sm:h-20 sm:w-[750px]">
-                  <Typed
+                  {/* <Typed
                     className="text-3xl lg:text-5xl 2xl:text-7xl font-extrabold"
                     strings={['With special sauce']}
                     typeSpeed={100}
                     backSpeed={100}
                     loop
                   >
-                  </Typed>
+                  </Typed> */}
                 </div>
               </div>
               <p className="text-2xl text-center  sm:text-start sm:text-black/50">Italian pasta with special sauce is a <br /> flavor you can find only in <b className="text-black">fode</b></p>
