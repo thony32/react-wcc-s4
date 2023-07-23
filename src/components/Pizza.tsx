@@ -84,7 +84,7 @@ const Pizza = () => {
           </div>
 
           <div className="flex col-span-2 justify-center items-center">
-            <button className="flex items-center justify-center gap-2 btn lg:btn-sm 2xl:btn-md bg-[#ffdb80] rounded-full lowercase">
+            <button className="flex items-center justify-center gap-2 btn lg:btn-sm 2xl:btn-md bg-[#ffdb80] hover:bg-[#ffdb81] rounded-full lowercase">
               <div>
                 <svg className="lg:w-6 lg:h-6 2xl:w-7 2xl:h-7 stroke-black fill-none" viewBox="0 0 24 24">
                   <defs></defs>
