@@ -28,7 +28,7 @@ function App() {
       console.log(1.618)
     };
 
-    const animationTimeout = setTimeout(updateAnimations, 4000);
+    const animationTimeout = setTimeout(updateAnimations, 5000);
 
     return () => clearTimeout(animationTimeout);
   }, []);
@@ -40,8 +40,13 @@ function App() {
       </div>
       <AnimatedCursor innerSize={15} outerSize={20} color="240,186,113" outerAlpha={0.5} innerScale={1.5} outerScale={3} clickables={["button", ".fode"]} />
       {/* loading */}
-      <div className={isLoad ? "opacity-100 duration-1000 ease-in-out h-screen flex justify-center items-center" : "hidden"}>
-        <img src="/images/loader imgs/burger.png" alt="" className="absolute"/>
+      <div className={isLoad ? "opacity-100 duration-1000 ease-in-out h-screen relative flex justify-center items-center" : "hidden"}>
+        <img src="/images/loader imgs/burger.png" alt="" className="absolute top-0 left-0 -rotate-45 scale-90"/>
+        <img src="/images/loader imgs/pizzaload.png" alt="" className="absolute bottom-0 left-0 scale-[30%]"/>
+        <img src="/images/loader imgs/fries.png" alt="" className="absolute bottom-0 right-0 rotate-45 scale-90" />
+        <img src="/images/loader imgs/hotdog.png" alt="" className="absolute top-0 right-56 rotate-45 scale-50" />
+        <img src="/images/loader imgs/burger.png" alt="" className="absolute bottom-0 left-[25%] -rotate-45 scale-50" />
+        <img src="/images/loader imgs/pizzaload.png" alt="" className="absolute top-0 left-[40%] rotate-45 scale-50" />
         <Loading />
       </div>
       {/* images */}
