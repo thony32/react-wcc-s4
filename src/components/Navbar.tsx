@@ -36,7 +36,7 @@ export default function Navbar() {
   })
   return (
     <div>
-      <div className="navbar px-[10%] lg:px-[4%] py-10">
+      <div className="navbar px-[10%] lg:px-[4%] py-10 bg-black sm:bg-transparent">
         <div className="navbar-start">
           <a className="text-white lg:text-current font-bold text-3xl lg:text-4xl">
             Fode<span className="text-[#ffdb80] text-4xl font-bold">.</span>

@@ -1,22 +1,7 @@
 export default function Chef() {
   return (
-    <div className="h-40 relative flex items-center lg:gap-7 2xl:gap-8 p-8 border-l-4 border-dashed border-l-grey-400 rounded-l-full group">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-0 right-0 w-6 h-6"
-        zoomAndPan="magnify"
-        viewBox="0 0 30 30.000001"
-        preserveAspectRatio="xMidYMid meet"
-        version="1.0"
-      >
-        <defs>
-          <clipPath id="ed3fb0c392">
-            <path
-              d="M 0.484375 0 L 29.515625 0 L 29.515625 29.03125 L 0.484375 29.03125 Z M 0.484375 0 "
-              clipRule="nonzero"
-            />
-          </clipPath>
-        </defs>
+    <div className="h-40 relative flex items-center gap-5 lg:gap-7 2xl:gap-8 p-4 sm:p-8 border-l-4 border-dashed border-l-grey-400 rounded-l-full group">
+      <svg className="absolute top-0 right-0 w-6 h-6" viewBox="0 0 30 30.000001">
         <g clipPath="url(#ed3fb0c392)">
           <path
             fill="gray"
@@ -26,24 +11,7 @@ export default function Chef() {
           />
         </g>
       </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-
-        className="absolute bottom-0 right-0 w-6 h-6"
-        zoomAndPan="magnify"
-        viewBox="0 0 30 30.000001"
-
-        preserveAspectRatio="xMidYMid meet"
-        version="1.0"
-      >
-        <defs>
-          <clipPath id="a4cd3f9139">
-            <path
-              d="M 0.484375 0 L 29.515625 0 L 29.515625 29.03125 L 0.484375 29.03125 Z M 0.484375 0 "
-              clipRule="nonzero"
-            />
-          </clipPath>
-        </defs>
+      <svg className="absolute bottom-0 right-0 w-6 h-6" viewBox="0 0 30 30.000001">
         <g clipPath="url(#a4cd3f9139)">
           <path
             fill="gray"
