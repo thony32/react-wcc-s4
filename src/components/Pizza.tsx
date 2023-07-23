@@ -83,11 +83,11 @@ const Pizza = () => {
           <div className="flex col-span-2 justify-center items-center">
             <button className="flex items-center justify-center gap-2 btn btn-sm lg:btn-sm 2xl:btn-md border-[#ffdb80] bg-[#ffdb80] hover:border-white hover:bg-transparent hover:text-white rounded-full lowercase">
               <div >
-                <svg className="w-5 lg:w-6 lg:h-6 2xl:w-7 2xl:h-7 stroke-current fill-none animate-spin hover:stroke-white" viewBox="0 0 24 24">
+                <svg className="w-5 lg:w-6 lg:h-6 2xl:w-7 2xl:h-7 stroke-current fill-none  animate-spin hover:stroke-white" viewBox="0 0 24 24">
                   <defs></defs>
                   <g id="ic-actions-timer">
                     <circle className="cls-1" cx="12" cy="13.5" r="8" />
-                    <polyline className="cls-2" points="12 9 12 14 15 16" />
+                    <polyline className="cls-2 " points="12 9 12 14 15 16" />
                   </g>
                 </svg>
               </div>
