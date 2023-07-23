@@ -3,7 +3,7 @@ import pizza from "../assets/pizza.png";
 
 const Pizza = () => {
   return (
-    <div className="sm:w-1/3 sm:text-white">
+    <div className="lg:w-[40%] 2xl:w-1/3 sm:text-white">
       {/* Discount coupon */}
       <div className="flex items-center border-dashed border-black/60 sm:border-white border border-b-0 rounded-t-2xl justify-between p-2 pb-4 sm:p-4 sm:pb-0">
         <div className="sm:p-4 text-xs font-semibold">Discount Coupon</div>
