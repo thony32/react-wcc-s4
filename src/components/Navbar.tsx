@@ -7,25 +7,31 @@ export default function Navbar() {
   const menu = document.getElementById("menu");
 
   why?.addEventListener("mouseover", () => {
-    document.getElementById("baguette_one")?.classList.add("!translate-y-[100%]")
+    document.getElementById("baguette_one")?.classList.add("2xl:!translate-y-[100%]")
+    document.getElementById("baguette_one")?.classList.add("!translate-y-[70%]")
     document.getElementById("baguette_one")?.classList.add("rotate-45")
 
-    document.getElementById("baguette_two")?.classList.add("!translate-y-[100%]")
+    document.getElementById("baguette_two")?.classList.add("2xl:!translate-y-[100%]")
+    document.getElementById("baguette_two")?.classList.add("!translate-y-[70%]")
     document.getElementById("baguette_two")?.classList.add("rotate-[90deg]")
   });
   why?.addEventListener("mouseout", () => {
-    document.getElementById("baguette_one")?.classList.remove("!translate-y-[100%]")
+    document.getElementById("baguette_one")?.classList.remove("2xl:!translate-y-[100%]")
+    document.getElementById("baguette_one")?.classList.remove("!translate-y-[70%]")
     document.getElementById("baguette_one")?.classList.remove("rotate-45")
 
-    document.getElementById("baguette_two")?.classList.remove("!translate-y-[100%]")
+    document.getElementById("baguette_two")?.classList.remove("2xl:!translate-y-[100%]")
+    document.getElementById("baguette_two")?.classList.remove("!translate-y-[70%]")
     document.getElementById("baguette_two")?.classList.remove("rotate-[90deg]")
   });
 
   about?.addEventListener("mouseover" ,() => {
-    document.getElementById("vantan")?.classList.add("!scale-[130%]")
+    document.getElementById("vantan")?.classList.add("2xl:!scale-[130%]")
+    document.getElementById("vantan")?.classList.add("!scale-[102%]")
   })
   about?.addEventListener("mouseout" ,() => {
-    document.getElementById("vantan")?.classList.remove("!scale-[130%]")
+    document.getElementById("vantan")?.classList.remove("2xl:!scale-[130%]")
+    document.getElementById("vantan")?.classList.remove("!scale-[102%]")
   })
 
   menu?.addEventListener("mouseover" , () => {
