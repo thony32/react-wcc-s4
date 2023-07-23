@@ -3,17 +3,14 @@ import pizza from "../assets/pizza.png";
 
 const Pizza = () => {
   return (
-    <div className="w-1/3 text-white">
+    <div className="sm:w-1/3 sm:text-white">
       {/* Discount coupon */}
-      <div className="flex border-dashed border-white border border-b-0 rounded-t-2xl justify-between p-4">
-        <div className="p-4 font-semibold">Discount Coupon</div>
-        <div className="flex gap-8 p-4">
+      <div className="flex items-center border-dashed border-black/60 sm:border-white border border-b-0 rounded-t-2xl justify-between p-2 pb-4 sm:p-4 sm:pb-0">
+        <div className="sm:p-4 text-xs font-semibold">Discount Coupon</div>
+        <div className="flex gap-3 sm:gap-8 sm:p-4">
           {/* Prev */}
-          <button className="flex group">
-            <svg
-              className="w-6 h-6 group-hover:-translate-x-2 duration-300"
-              viewBox="0 0 75 37.5"
-            >
+          <button className="flex group text-sm sm:text-base items-center">
+            <svg className="w-6 h-6 group-hover:-translate-x-2 duration-300" viewBox="0 0 75 37.5">
               <g clipPath="url(#a17eb4f0a0)">
                 <path
                   fill="#ffffff"
@@ -34,7 +31,7 @@ const Pizza = () => {
             Prev
           </button>
           {/* Next */}
-          <button className="flex font-bold group">
+          <button className="flex font-bold group text-sm sm:text-base items-center">
             Next
             <svg viewBox="0 0 75 37.5" className="w-6 h-6 group-hover:translate-x-2 duration-300">
               <g clipPath="url(#9ff828e112)">
@@ -58,21 +55,21 @@ const Pizza = () => {
         </div>
       </div>
       {/* Pizza */}
-      <div className="p-4 border border-dashed border-white rounded-2xl -translate-y-[10%]">
-        <div className="grid grid-cols-6">
-          <div>
+      <div className="p-4 border border-dashed border-black/60 sm:border-white rounded-2xl -translate-y-[5%] sm:-translate-y-[10%]">
+        <div className="grid grid-cols-6 gap-2 sm:gap-0">
+          <div className="flex items-center">
             <img src={pizza} alt="" className="w-16 2xl:w-20" />
           </div>
 
           <div className="col-span-2 flex flex-col lg:gap-2 2xl:gap-4 items-center lg:items-start justify-center">
-            <div className="lg:text-xl 2xl:text-2xl text-left">Mexicoo Pizza</div>
-            <div className="text-sm flex gap-2 items-center">
+            <div className="text-sm lg:text-xl 2xl:text-2xl text-left">Mexicoo Pizza</div>
+            <div className="text-xs sm:text-sm flex gap-2 items-center">
               <div className="loader"></div>
               78 Calories
             </div>
           </div>
 
-          <div className="flex flex-col gap-3 justify-center">
+          <div className="flex flex-col sm:gap-3 justify-center">
             <div className="line-through text-[#ffdb80]">$7.90</div>
             <CountUp delay={2.5} start={0} end={7.9} duration={4} decimals={2} decimal=",">
               {({ countUpRef }) => (
@@ -84,9 +81,9 @@ const Pizza = () => {
           </div>
 
           <div className="flex col-span-2 justify-center items-center">
-            <button className="flex items-center justify-center gap-2 btn lg:btn-sm 2xl:btn-md bg-[#ffdb80] rounded-full lowercase">
+            <button className="flex items-center justify-center gap-2 btn btn-sm lg:btn-sm 2xl:btn-md bg-[#ffdb80] rounded-full lowercase">
               <div>
-                <svg className="lg:w-6 lg:h-6 2xl:w-7 2xl:h-7 stroke-black fill-none" viewBox="0 0 24 24">
+                <svg className="w-5 lg:w-6 lg:h-6 2xl:w-7 2xl:h-7 stroke-black fill-none" viewBox="0 0 24 24">
                   <defs></defs>
                   <g id="ic-actions-timer">
                     <circle className="cls-1" cx="12" cy="13.5" r="8" />
@@ -94,7 +91,7 @@ const Pizza = () => {
                   </g>
                 </svg>
               </div>
-              <div className="text-center lg:text-sm 2xl:text-lg">30 dk.</div>
+              <div className="text-center text-xs lg:text-sm 2xl:text-lg">30 dk.</div>
             </button>
           </div>
         </div>

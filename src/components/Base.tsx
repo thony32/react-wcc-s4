@@ -8,10 +8,10 @@ import "react-typed/dist/animatedCursor.css";
 export default function Base() {
   // * for buy button
   const [shop, setShop] = useState(
-    "w-5 fill-[#151515] group-hover:scale-125 duration-300 ease-in-out"
+    "w-4 sm:w-5 fill-[#151515] group-hover:scale-125 duration-300 ease-in-out"
   );
   const [check, setCheck] = useState(
-    "w-5 text-[#151515] absolute duration-300 ease-in-out opacity-0"
+    "w-4 sm:w-5 text-[#151515] absolute duration-300 ease-in-out opacity-0"
   );
 
   const handleBuy = () => {
@@ -77,15 +77,15 @@ export default function Base() {
 
   return (
     <div>
-      <div className="grid grid-cols-2 lg:h-[115vh] 2xl:h-[90vh] px-[15%]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 h-auto lg:h-[115vh] 2xl:h-[90vh] px-[5%] sm:px-[15%] pt-[50%] sm:pt-0">
         <div className="flex items-center">
           <div className="space-y-10">
             <div className="lg:space-y-3 2xl:space-y-6">
               <div className="space-y-3">
-                <h1 className=" lg:text-5xl 2xl:text-7xl">Italian Pasta</h1>
-                <div className="h-20 w-[750px]">
+                <h1 className="text-3xl text-center sm:text-start lg:text-5xl 2xl:text-7xl">Italian Pasta</h1>
+                <div className="text-center  sm:text-start sm:h-20 sm:w-[750px]">
                   <Typed
-                    className="lg:text-5xl 2xl:text-7xl font-extrabold"
+                    className="text-3xl lg:text-5xl 2xl:text-7xl font-extrabold"
                     strings={['With special sauce']}
                     typeSpeed={100}
                     backSpeed={100}
@@ -94,9 +94,9 @@ export default function Base() {
                   </Typed>
                 </div>
               </div>
-              <p className="text-2xl text-black/50">Italian pasta with special sauce is a <br /> flavor you can find only in <b className="text-black">fode</b></p>
+              <p className="text-2xl text-center  sm:text-start sm:text-black/50">Italian pasta with special sauce is a <br /> flavor you can find only in <b className="text-black">fode</b></p>
             </div>
-            <div className="grid grid-cols-5">
+            <div className="flex justify-center items-center gap-10 sm:grid grid-cols-5">
               <div>
                 <div className="line-through opacity-50">$7.90</div>
                 <CountUp
@@ -114,9 +114,9 @@ export default function Base() {
                   )}
                 </CountUp>
               </div>
-              <div className="col-span-4">
-                <button onClick={handleBuy} className="bg-[#151515] hover:ring hover:ring-[#151515] hover:ring-offset-2 active:scale-105 lg:p-3 2xl:p-5 rounded-full duration-150 flex items-center gap-5 lg:w-2/5 2xl:w-1/2 group cursor-pointer">
-                  <span className="bg-[#FCDA7E] flex items-center justify-center p-3 duration-100 rounded-full ring-1 ring-white">
+              <div className="sm:col-span-4">
+                <button onClick={handleBuy} className="bg-[#151515] hover:ring hover:ring-[#151515] hover:ring-offset-2 active:scale-105 p-2 lg:p-3 2xl:p-5 rounded-full duration-150 flex items-center gap-5 lg:w-2/5 2xl:w-1/2 group cursor-pointer">
+                  <span className="bg-[#FCDA7E] flex items-center justify-center p-2 sm:p-3 duration-100 rounded-full ring-1 ring-white">
                     <svg className={shop} viewBox="704.081 796 200 200">
                       <path d="M891.876,977.909l-6.938-125.811h-34.661v-10.157c0-25.333-20.608-45.941-45.94-45.941s-45.94,20.609-45.94,45.941v10.157
 
@@ -144,54 +144,30 @@ export default function Base() {
                       />
                     </svg>
                   </span>
-                  <span className="text-white text-2xl font-bold capitalize">
+                  <span className="text-white text-sm sm:text-2xl font-bold capitalize">
                     Buy now
                   </span>
                 </button>
               </div>
-
             </div>
-            <div className="flex gap-2">
+            <div className="flex justify-center sm:justify-start gap-2">
               <div id="bar_one" className={c_bar_one}></div>
               <div id="bar_two" className={c_bar_two}></div>
               <div id="bar_three" className={c_bar_three}></div>
             </div>
           </div>
         </div>
-
       </div>
-      <div className="flex justify-between lg:gap-10 2xl:gap-16 px-[8%] -translate-y-16">
+      <div className="sm:flex relative grid grid-cols-1 space-y-10 sm:space-y-0 justify-between lg:gap-10 2xl:gap-16 px-[8%] translate-y-10 sm:-translate-y-16">
         <Chef />
-
-        <div className="flex items-center lg:translate-x-[110%] 2xl:translate-x-[150%] ">
-          <span className="lg:p-0 2xl:p-2 text-white font-semibold rotate-90 ... -translate-y-[100%] ">
+        <div className="flex flex-col absolute top-[25%] left-0 sm:relative items-center lg:translate-x-[110%] 2xl:translate-x-[150%] ">
+          <span className="lg:p-0 2xl:p-2 text-xs sm:text-xl sm:text-white font-semibold rotate-90 -translate-y-[100%] ">
             scroll
           </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-7 h-16 animate-bounce infinite"
-            zoomAndPan="magnify"
-            viewBox="0 0 37.5 74.999998"
-            preserveAspectRatio="xMidYMid meet"
-            version="1.0"
-          >
-            <defs>
-              <clipPath id="aafcfa17d7">
-                <path
-                  d="M 0 52.992188 L 37.007812 52.992188 L 37.007812 74.503906 L 0 74.503906 Z M 0 52.992188 "
-                  clipRule="nonzero"
-                />
-              </clipPath>
-              <clipPath id="1316e9b1b7">
-                <path
-                  d="M 16.347656 1 L 20.847656 1 L 20.847656 74 L 16.347656 74 Z M 16.347656 1 "
-                  clipRule="nonzero"
-                />
-              </clipPath>
-            </defs>
+          <svg className="h-5 sm:w-7 sm:h-16 animate-bounce infinite" viewBox="0 0 37.5 74.999998">
             <g clipPath="url(#aafcfa17d7)">
               <path
-                fill="#ffffff"
+                className="fill-black sm:fill-white"
                 d="M 37.460938 56.921875 L 18.8125 75.488281 L 0.0351562 56.792969 L 3.851562 52.988281 L 18.8125 67.886719 L 33.640625 53.117188 L 37.460938 56.921875 "
                 fillOpacity="1"
                 fillRule="nonzero"
@@ -199,7 +175,7 @@ export default function Base() {
             </g>
             <g clipPath="url(#1316e9b1b7)">
               <path
-                fill="#ffffff"
+                className="fill-black sm:fill-white"
                 d="M 16.347656 3.660156 L 16.347656 70.894531 C 16.347656 72.21875 17.351562 73.292969 18.597656 73.292969 C 19.839844 73.292969 20.847656 72.21875 20.847656 70.894531 L 20.847656 3.660156 C 20.847656 2.332031 19.839844 1.257812 18.597656 1.257812 C 17.351562 1.257812 16.347656 2.332031 16.347656 3.660156 Z M 16.347656 3.660156 "
                 fillOpacity="1"
                 fillRule="nonzero"

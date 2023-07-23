@@ -7,25 +7,32 @@ export default function Navbar() {
   const menu = document.getElementById("menu");
 
   why?.addEventListener("mouseover", () => {
-    document.getElementById("baguette_one")?.classList.add("!translate-y-[100%]")
+    document.getElementById("baguette_one")?.classList.add("2xl:!translate-y-[100%]")
+    document.getElementById("baguette_one")?.classList.add("!translate-y-[70%]")
     document.getElementById("baguette_one")?.classList.add("rotate-45")
 
-    document.getElementById("baguette_two")?.classList.add("!translate-y-[100%]")
+    document.getElementById("baguette_two")?.classList.add("2xl:!translate-y-[100%]")
+    document.getElementById("baguette_two")?.classList.add("!translate-y-[70%]")
     document.getElementById("baguette_two")?.classList.add("rotate-[90deg]")
   });
   why?.addEventListener("mouseout", () => {
-    document.getElementById("baguette_one")?.classList.remove("!translate-y-[100%]")
+    document.getElementById("baguette_one")?.classList.remove("2xl:!translate-y-[100%]")
+    document.getElementById("baguette_one")?.classList.remove("!translate-y-[70%]")
     document.getElementById("baguette_one")?.classList.remove("rotate-45")
 
-    document.getElementById("baguette_two")?.classList.remove("!translate-y-[100%]")
+    document.getElementById("baguette_two")?.classList.remove("2xl:!translate-y-[100%]")
+    document.getElementById("baguette_two")?.classList.remove("!translate-y-[70%]")
     document.getElementById("baguette_two")?.classList.remove("rotate-[90deg]")
   });
 
-  about?.addEventListener("mouseover", () => {
-    document.getElementById("vantan")?.classList.add("!scale-[130%]")
+
+  about?.addEventListener("mouseover" ,() => {
+    document.getElementById("vantan")?.classList.add("2xl:!scale-[130%]")
+    document.getElementById("vantan")?.classList.add("!scale-[102%]")
   })
-  about?.addEventListener("mouseout", () => {
-    document.getElementById("vantan")?.classList.remove("!scale-[130%]")
+  about?.addEventListener("mouseout" ,() => {
+    document.getElementById("vantan")?.classList.remove("2xl:!scale-[130%]")
+    document.getElementById("vantan")?.classList.remove("!scale-[102%]")
   })
 
   menu?.addEventListener("mouseover", () => {
@@ -36,7 +43,7 @@ export default function Navbar() {
   })
   return (
     <div>
-      <div className="navbar px-[10%] lg:px-[4%] py-10">
+      <div className="navbar px-[10%] lg:px-[4%] py-10 bg-black sm:bg-transparent">
         <div className="navbar-start">
           <a className="text-white lg:text-current font-bold text-3xl lg:text-4xl">
             Fode<span className="text-[#ffdb80] text-4xl font-bold">.</span>
@@ -45,7 +52,7 @@ export default function Navbar() {
         <div className="navbar-end">
           <div className="search-container mr-5">
             <div>
-              <input className="search expandright border-b-2 border-current text-white" id="searchright" type="search" name="q" placeholder="Search" />
+              <input className="search expandright border-b-2 border-current text-black" id="searchright" type="search" name="q" placeholder="Search" />
               <label className="button searchbutton flex justify-center" htmlFor="searchright">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 text-current">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
