@@ -25,6 +25,7 @@ function App() {
         baguette_un: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%]  translate-x-[5%] translate-y-[83%] 2xl:translate-x-[155%] lg:translate-x-[117%] lg:translate-y-[27%] z-10 absolute duration-700",
         vanttan: "scale-[40%] lg:scale-[65%] 2xl:scale-[100%]  translate-x-[0%] translate-y-[25%] lg:translate-y-[25%] 2xl:translate-x-[258%] lg:translate-x-[190%] 2xl:translate-y-[45%] z-0 absolute duration-700",
       });
+      console.log(1.618)
     };
 
     const animationTimeout = setTimeout(updateAnimations, 4000);
