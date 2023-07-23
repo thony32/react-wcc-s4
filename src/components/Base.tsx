@@ -98,10 +98,10 @@ export default function Base() {
               <div>
                 <div className="line-through opacity-50">$7.90</div>
                 <CountUp
-                  delay={3}
+                  delay={4}
                   start={0}
                   end={7.9}
-                  duration={4}
+                  duration={8}
                   decimals={2}
                   decimal=","
                 >

@@ -27,7 +27,7 @@ function App() {
       });
     };
 
-    const animationTimeout = setTimeout(updateAnimations, 3000);
+    const animationTimeout = setTimeout(updateAnimations, 4000);
 
     return () => clearTimeout(animationTimeout);
   }, []);
