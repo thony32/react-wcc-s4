@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="relative gilroy">
-      <AnimatedCursor innerSize={15} outerSize={20} color="240,186,113" outerAlpha={0.5} innerScale={1.5} outerScale={3} clickables={["button"]} />
+      <AnimatedCursor innerSize={15} outerSize={20} color="240,186,113" outerAlpha={0.5} innerScale={1.5} outerScale={3} clickables={["button",".fode"]} />
       {/* loading */}
       <div className={isLoad ? "opacity-100 duration-1000 ease-in-out h-screen flex justify-center items-center translate-y-52" : "hidden"}>
         <Loading />
