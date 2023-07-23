@@ -1,5 +1,5 @@
 import "../style/navbar.css";
-import NavbarMobile from "./NavbarMobile";
+import MenuMobile from "./MenuMobile";
 
 export default function Navbar() {
   const why = document.getElementById("why");
@@ -105,8 +105,8 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="block lg:hidden">
-        <NavbarMobile />
+      <div className="block lg:hidden fixed bottom-[30%] right-2 bg-red-500 z-50">
+        <MenuMobile />
       </div>
     </div>
   );
