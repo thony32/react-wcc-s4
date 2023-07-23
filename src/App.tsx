@@ -47,7 +47,7 @@ function App() {
         <div className="h-full relative">
           <div className={isLoad ? "-translate-x-[23%] duration-700" : "translate-x-0 duration-700 opacity-30 sm:opacity-100"}>
             {/* vilia */}
-            <img className={animationStyles.valia} src="/images/vilia.png" alt="" loading="lazy" />
+            <img className={animationStyles.valia} src="/images/vilia-min.png" alt="" loading="lazy" />
             {/* bagette */}
             <img id="baguette_one" className={animationStyles.baguette_deux} src="/images/baguette 2.png" alt="" />
             <img id="baguette_two" className={animationStyles.baguette_un} src="/images/baguette 1.png" alt="" />
