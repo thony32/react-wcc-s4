@@ -66,6 +66,10 @@ function App() {
       <div className={isLoad ? "opacity-0 duration-[1500ms] ease-in-out" : "opacity-100 duration-[1500ms] ease-in-out absolute top-0 right-0 h-full -z-50 "}>
         <img className="hidden lg:block lg:h-full lg:w-full z-0" src="/images/back.png" alt="" />
       </div>
+      {/* Mobile waves */}
+      <div className="absolute w-full">
+        <img className="w-full scale-[200%]" src="/src/assets/mobilewave.svg" alt=""/>
+      </div>
       <div className={isLoad ? "opacity-0 hidden duration-[1500ms] ease-in-out" : "opacity-100 duration-[1500ms] ease-in-out"}>
         <div>
           <img className="opacity-100 duration-1000 ease-in-out absolute bottom-[20%] -left-[5%] sm:left-0 scale-75 sm:scale-110" src="/images/nap.png" alt="" />
