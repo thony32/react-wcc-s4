@@ -3,7 +3,7 @@ import pizza from "../assets/pizza.png";
 
 const Pizza = () => {
   return (
-    <div className="sm:w-1/3 sm:text-white">
+    <div className="lg:w-[40%] 2xl:w-1/3 sm:text-white">
       {/* Discount coupon */}
       <div className="flex items-center border-dashed border-black/60 sm:border-white border border-b-0 rounded-t-2xl justify-between p-2 pb-4 sm:p-4 sm:pb-0">
         <div className="sm:p-4 text-xs font-semibold">Discount Coupon</div>
@@ -81,9 +81,9 @@ const Pizza = () => {
           </div>
 
           <div className="flex col-span-2 justify-center items-center">
-            <button className="flex items-center justify-center gap-2 btn btn-sm lg:btn-sm 2xl:btn-md bg-[#ffdb80] rounded-full lowercase">
-              <div>
-                <svg className="w-5 lg:w-6 lg:h-6 2xl:w-7 2xl:h-7 stroke-black fill-none" viewBox="0 0 24 24">
+            <button className="flex items-center justify-center gap-2 btn btn-sm lg:btn-sm 2xl:btn-md border-[#ffdb80] bg-[#ffdb80] hover:border-white hover:bg-transparent hover:text-white rounded-full lowercase">
+              <div >
+                <svg className="w-5 lg:w-6 lg:h-6 2xl:w-7 2xl:h-7 stroke-current fill-none animate-spin hover:stroke-white" viewBox="0 0 24 24">
                   <defs></defs>
                   <g id="ic-actions-timer">
                     <circle className="cls-1" cx="12" cy="13.5" r="8" />

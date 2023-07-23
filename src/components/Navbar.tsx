@@ -1,5 +1,5 @@
 import "../style/navbar.css";
-import NavbarMobile from "./NavbarMobile";
+import MenuMobile from "./MenuMobile";
 
 export default function Navbar() {
   const why = document.getElementById("why");
@@ -26,11 +26,11 @@ export default function Navbar() {
   });
 
 
-  about?.addEventListener("mouseover" ,() => {
+  about?.addEventListener("mouseover", () => {
     document.getElementById("vantan")?.classList.add("2xl:!scale-[130%]")
     document.getElementById("vantan")?.classList.add("!scale-[102%]")
   })
-  about?.addEventListener("mouseout" ,() => {
+  about?.addEventListener("mouseout", () => {
     document.getElementById("vantan")?.classList.remove("2xl:!scale-[130%]")
     document.getElementById("vantan")?.classList.remove("!scale-[102%]")
   })
@@ -45,7 +45,7 @@ export default function Navbar() {
     <div>
       <div className="navbar px-[10%] lg:px-[4%] py-10 bg-black sm:bg-transparent">
         <div className="navbar-start">
-          <a className="text-white lg:text-current font-extrabold gilroy-bold text-3xl lg:text-4xl fode">
+          <a className="text-white lg:text-current font-extrabold gilroy-bold text-3xl lg:text-4xl">
             Fode<span className="text-[#ffdb80] text-4xl font-bold">.</span>
           </a>
         </div>
@@ -98,12 +98,15 @@ export default function Navbar() {
               <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#ffdb80] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#ffdb80] after:duration-500 hover:text-black group-hover:before:h-full group-hover:after:h-full"></span>
               <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-black">Sign up</span>
             </button>
-            <button className="btn rounded-full bg-[#ffdb80] hover:bg-[#ffdb81] capitalize 2xl:px-6">Login</button>
+            <button className="group relative min-h-[50px] w-20 border-[#ffdb80] overflow-hidden border text-black bg-[#ffdb80] rounded-full shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-white before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-white after:duration-500 hover:text-black hover:before:h-full hover:after:h-full">
+              <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-white before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-white after:duration-500 hover:text-black group-hover:before:h-full group-hover:after:h-full"></span>
+              <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-black hover:border-white">Login</span>
+            </button>
           </div>
         </div>
       </div>
-      <div className="block lg:hidden">
-        <NavbarMobile />
+      <div className="block lg:hidden fixed bottom-[30%] right-2 bg-red-500 z-50">
+        <MenuMobile />
       </div>
     </div>
   );
