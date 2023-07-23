@@ -92,7 +92,7 @@ export default function Base() {
                   />
                 </div>
               </div>
-              <p className="text-2xl text-center  sm:text-start sm:text-black/50">Italian pasta with special sauce is a <br /> flavor you can find only in <b className="text-black">fode</b></p>
+              <p className="text-2xl text-center  sm:text-start sm:text-black/50">Italian pasta with special sauce is a <br /> flavor you can find only in <b className="text-black">fode.</b></p>
             </div>
             <div className="flex justify-center items-center gap-10 sm:grid grid-cols-5">
               <div>
