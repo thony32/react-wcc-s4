@@ -7597,7 +7597,7 @@ function App() {
         </div>
         {/* ondulation */}
         <div>
-          <img className="opacity-100 duration-1000 ease-in-out absolute top-[20%] lg:left-[2%] 2xl:left-[5%] 2xl:w-full lg:w-16" src="/src/assets/ondulations.svg" alt="" />
+          <img className="opacity-100 duration-1000 ease-in-out absolute top-[20%] lg:left-[2%] 2xl:left-[5%] 2xl:w-40 lg:w-16" src="/src/assets/ondulations.svg" alt="" />
         </div>
         <div className="absolute w-full">
           <Navbar />
