@@ -1,10 +1,24 @@
 import { useState } from "react";
 import Chef from "./Chef";
 import Pizza from "./Pizza";
-import CountUp from "react-countup";
 import Typewriter from 'typewriter-effect';
+import { useCountUp } from "use-count-up";
 
 export default function Base() {
+  const onComplete = () => {
+    // do your stuff here
+    return { shouldRepeat: true, delay: 5 }
+  }
+  const { value } = useCountUp({
+    isCounting: true,
+    start: 0,
+    end: 7.90,
+    duration: 5,
+    easing: "easeOutCubic",
+    decimalPlaces: 2,
+    decimalSeparator: ".",
+    onComplete: () => onComplete(),
+  });
   // * for buy button
   const [shop, setShop] = useState(
     "w-4 sm:w-5 fill-[#151515] group-hover:scale-125 duration-300 ease-in-out"
@@ -97,20 +111,7 @@ export default function Base() {
             <div className="flex justify-center items-center gap-10 sm:grid grid-cols-5">
               <div>
                 <div className="line-through opacity-50">$7.90</div>
-                <CountUp
-                  delay={4}
-                  start={0}
-                  end={7.9}
-                  duration={8}
-                  decimals={2}
-                  decimal="."
-                >
-                  {({ countUpRef }) => (
-                    <div className="lg:text-3xl 2xl:text-4xl">
-                      $<span ref={countUpRef} className="animate-bounce infinite" />
-                    </div>
-                  )}
-                </CountUp>
+                <div className="lg:text-3xl 2xl:text-4xl">${value}</div>
               </div>
               <div className="sm:col-span-4">
                 <button onClick={handleBuy} className="bg-[#151515] hover:ring hover:ring-[#151515] hover:ring-offset-2 active:scale-105 p-2 lg:p-3 2xl:p-5 rounded-full duration-150 flex items-center gap-5 lg:w-2/5 2xl:w-1/2 group cursor-pointer">
