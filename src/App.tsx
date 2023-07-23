@@ -17,7 +17,7 @@ function App() {
     document.body.style.overflow = "hidden";
 
     const updateAnimations = () => {
-      setIsLoad(true);
+      setIsLoad(false);
       document.body.style.overflow = "auto";
       setAnimationStyles({
         valia: "scale-[50%] lg:scale-[65%] 2xl:scale-[100%] translate-x-[0%] translate-y-[25%] lg:translate-x-[145%] lg:translate-y-[10%] 2xl:translate-x-[200%] 2xl:translate-y-[25%] absolute duration-700",
@@ -40,13 +40,13 @@ function App() {
       </div>
       <AnimatedCursor innerSize={15} outerSize={20} color="240,186,113" outerAlpha={0.5} innerScale={1.5} outerScale={3} clickables={["button", ".fode"]} />
       {/* loading */}
-      <div className={isLoad ? "opacity-100 duration-1000 ease-in-out h-screen relative flex justify-center items-center" : "hidden"}>
-        <img src="/images/loader imgs/burger.png" alt="" className="absolute top-0 left-0 -rotate-45 scale-90"/>
-        <img src="/images/loader imgs/pizzaload.png" alt="" className="absolute bottom-0 left-0 scale-[30%]"/>
-        <img src="/images/loader imgs/fries.png" alt="" className="absolute bottom-0 right-0 rotate-45 scale-90" />
-        <img src="/images/loader imgs/hotdog.png" alt="" className="absolute top-0 right-56 rotate-45 scale-50" />
-        <img src="/images/loader imgs/burger.png" alt="" className="absolute bottom-0 left-[25%] -rotate-45 scale-50" />
-        <img src="/images/loader imgs/pizzaload.png" alt="" className="absolute top-0 left-[40%] rotate-45 scale-50" />
+      <div className={isLoad ? "opacity-100 duration-1000 ease-in-out h-screen relative translate-y-56 flex justify-center items-center" : "hidden"}>
+        <img src="/images/loader imgs/burger.png" alt="" className="absolute top-0 left-0 -rotate-45 -translate-y-56 scale-90"/>
+        <img src="/images/loader imgs/pizzaload.png" alt="" className="absolute bottom-0 -translate-y-56 left-0 scale-[30%]"/>
+        <img src="/images/loader imgs/fries.png" alt="" className="absolute bottom-0 right-0 rotate-45 -translate-y-56 scale-90" />
+        <img src="/images/loader imgs/hotdog.png" alt="" className="absolute top-0 right-56 rotate-45 -translate-y-56 scale-50" />
+        <img src="/images/loader imgs/burger.png" alt="" className="absolute bottom-0 left-[25%] -rotate-45 -translate-y-56 scale-50" />
+        <img src="/images/loader imgs/pizzaload.png" alt="" className="absolute top-0 left-[40%] rotate-45 -translate-y-56 scale-50" />
         <Loading />
       </div>
       {/* images */}
