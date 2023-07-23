@@ -47,7 +47,7 @@ function App() {
         <div className="h-full relative">
           <div className={isLoad ? "-translate-x-[23%] duration-700" : "translate-x-0 duration-700 opacity-30 sm:opacity-100"}>
             {/* vilia */}
-            <img className={animationStyles.valia} src="/images/vilia.png" alt=""/>
+            <img className={animationStyles.valia} src="/images/vilia-min.png" alt="" loading="lazy" />
             {/* bagette */}
             <img id="baguette_one" className={animationStyles.baguette_deux} src="/images/baguette 2.png" alt="" />
             <img id="baguette_two" className={animationStyles.baguette_un} src="/images/baguette 1.png" alt="" />
@@ -71,14 +71,14 @@ function App() {
       </div>
       {/* Mobile waves */}
       <div className="absolute block sm:hidden w-full">
-        <img className="w-[100vw] scale-y-[120%]" src="/images/mobilewave.svg" alt="" />
+        <img className="w-[100vw] scale-y-[120%]" src="/src/assets/mobilewave.svg" alt="" />
       </div>
       <div className={isLoad ? "opacity-0 hidden duration-[1500ms] ease-in-out" : "opacity-100 duration-[1500ms] ease-in-out"}>
         <div>
           <img className="opacity-100 duration-1000 ease-in-out absolute bottom-[20%] -left-[5%] sm:left-0 scale-75 sm:scale-110" src="/images/nap.png" alt="" />
         </div>
         <div>
-          <img className="opacity-100 duration-1000 ease-in-out absolute top-[20%] lg:left-[2%] 2xl:left-[5%] 2xl:w-40 lg:w-16 w-10" src="/images/ondulations.svg" alt="" />
+          <img className="opacity-100 duration-1000 ease-in-out absolute top-[20%] lg:left-[2%] 2xl:left-[5%] 2xl:w-40 lg:w-16 w-10" src="/src/assets/ondulations.svg" alt="" />
         </div>
         <div className="absolute w-full">
           <Navbar />
