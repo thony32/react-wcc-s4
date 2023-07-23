@@ -41,12 +41,12 @@ function App() {
       <AnimatedCursor innerSize={15} outerSize={20} color="240,186,113" outerAlpha={0.5} innerScale={1.5} outerScale={3} clickables={["button", ".fode"]} />
       {/* loading */}
       <div className={isLoad ? "opacity-100 duration-1000 ease-in-out h-screen relative translate-y-56 flex justify-center items-center" : "hidden"}>
-        <img src="/images/loader imgs/burger.png" alt="" className="absolute top-0 left-0 -rotate-45 -translate-y-56 scale-90"/>
-        <img src="/images/loader imgs/pizzaload.png" alt="" className="absolute bottom-0 -translate-y-56 left-0 scale-[30%]"/>
-        <img src="/images/loader imgs/fries.png" alt="" className="absolute bottom-0 right-0 rotate-45 -translate-y-56 scale-90" />
-        <img src="/images/loader imgs/hotdog.png" alt="" className="absolute top-0 right-56 rotate-45 -translate-y-56 scale-50" />
-        <img src="/images/loader imgs/burger.png" alt="" className="absolute bottom-0 left-[25%] -rotate-45 -translate-y-56 scale-50" />
-        <img src="/images/loader imgs/pizzaload.png" alt="" className="absolute top-0 left-[40%] rotate-45 -translate-y-56 scale-50" />
+        <img src="/images/loader imgs/burger.png" alt="" className="absolute top-0 -left-20 sm:left-0 -rotate-45 -translate-y-56 scale-50 sm:scale-90 opacity-10 sm:opacity-90"/>
+        <img src="/images/loader imgs/pizzaload.png" alt="" className="absolute bottom-0 lg:-bottom-[10%] 2xl:bottom-0 -translate-y-56 left-0 scale-[30%] opacity-10 sm:opacity-90"/>
+        <img src="/images/loader imgs/fries.png" alt="" className="absolute bottom-0 right-44 sm:right-0 rotate-45 -translate-y-56 scale-50 sm:scale-90 opacity-10 sm:opacity-90" />
+        <img src="/images/loader imgs/hotdog.png" alt="" className="absolute top-0 lg:-top-[20%] 2xl:top-0 right-56 lg:right-0 2xl:right-56 rotate-45 -translate-y-56 scale-50 opacity-10 sm:opacity-90" />
+        <img src="/images/loader imgs/burger.png" alt="" className="absolute bottom-0 lg:-bottom-[15%] 2xl:bottom-0 left-[25%] -rotate-45 -translate-y-56 scale-50 opacity-10 sm:opacity-90" />
+        <img src="/images/loader imgs/pizzaload.png" alt="" className="absolute top-0 left-[40%] rotate-45 -translate-y-56 scale-50 opacity-10 sm:opacity-90" />
         <Loading />
       </div>
       {/* images */}
@@ -77,7 +77,7 @@ function App() {
         <img className="hidden lg:block lg:h-full lg:w-full z-0" src="/images/back.png" alt="" />
       </div>
       {/* Mobile waves */}
-      <div className="absolute block sm:hidden w-full">
+      <div className={isLoad ? "hidden" : "absolute block sm:hidden w-full"}>
         <img className="w-[100vw] scale-y-[120%]" src="/images/mobilewave.svg" alt="" />
       </div>
       <div className={isLoad ? "opacity-0 hidden duration-[1500ms] ease-in-out" : "opacity-100 duration-[1500ms] ease-in-out"}>
