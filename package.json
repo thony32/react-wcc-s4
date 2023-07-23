@@ -18,7 +18,8 @@
     "react-cursor-follow": "^2.0.0",
     "react-dom": "^18.2.0",
     "three": "^0.154.0",
-    "typewriter-effect": "^2.20.1"
+    "typewriter-effect": "^2.20.1",
+    "use-count-up": "^3.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

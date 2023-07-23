@@ -1,7 +1,22 @@
-import CountUp from "react-countup";
 import pizza from "../assets/pizza.png";
+import { useCountUp } from "use-count-up";
 
 const Pizza = () => {
+  const onComplete = () => {
+    // do your stuff here
+    return { shouldRepeat: true, delay: 5 }
+  }
+
+  const { value } = useCountUp({
+    isCounting: true,
+    start: 0,
+    end: 7.90,
+    duration: 5,
+    easing: "easeOutCubic",
+    decimalPlaces : 2,
+    decimalSeparator: ".",
+    onComplete: () => onComplete(),
+  });
   return (
     <div className="lg:w-[40%] 2xl:w-1/3 sm:text-white">
       {/* Discount coupon */}
@@ -71,6 +86,10 @@ const Pizza = () => {
 
           <div className="flex flex-col sm:gap-3 justify-center">
             <div className="line-through text-[#ffdb80]">$7.90</div>
+            <div className="lg:text-2xl 2xl:text-3xl">{value}</div>
+          </div>
+
+          {/* <div className="flex flex-col sm:gap-3 justify-center">
             <CountUp delay={4}
               start={0}
               end={7.9}
@@ -83,7 +102,7 @@ const Pizza = () => {
                 </div>
               )}
             </CountUp>
-          </div>
+          </div> */}
 
           <div className="flex col-span-2 justify-center items-center">
             <button className="flex items-center justify-center gap-2 btn btn-sm lg:btn-sm 2xl:btn-md border-[#ffdb80] bg-[#ffdb80] hover:border-white hover:bg-transparent hover:text-white rounded-full lowercase">
