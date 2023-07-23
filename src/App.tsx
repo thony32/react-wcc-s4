@@ -85,7 +85,7 @@ function App() {
           <img className="opacity-100 duration-1000 ease-in-out absolute bottom-[20%] -left-[5%] sm:left-0 scale-75 sm:scale-110" src="/images/nap.png" alt="" />
         </div>
         <div>
-          <img className="opacity-100 duration-1000 ease-in-out absolute top-[20%] lg:left-[2%] 2xl:left-[5%] 2xl:w-40 lg:w-16 w-10" src="/images/ondulations.svg" alt="" />
+          <img className="opacity-100 duration-1000 ease-in-out absolute top-[20%] lg:left-[2%] 2xl:left-[5%] 2xl:w-20 lg:w-16 w-10" src="/images/ondulations.svg" alt="" />
         </div>
         <div className="absolute w-full">
           <Navbar />
