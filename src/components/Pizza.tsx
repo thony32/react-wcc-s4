@@ -86,23 +86,8 @@ const Pizza = () => {
 
           <div className="flex flex-col sm:gap-3 justify-center">
             <div className="line-through text-[#ffdb80]">$7.90</div>
-            <div className="lg:text-2xl 2xl:text-3xl">{value}</div>
+            <div className="lg:text-2xl 2xl:text-3xl">${value}</div>
           </div>
-
-          {/* <div className="flex flex-col sm:gap-3 justify-center">
-            <CountUp delay={4}
-              start={0}
-              end={7.9}
-              duration={8}
-              decimals={2}
-              decimal=".">
-              {({ countUpRef }) => (
-                <div className="lg:text-2xl 2xl:text-3xl">
-                  $<span ref={countUpRef} className="animate-bounce infinite" />
-                </div>
-              )}
-            </CountUp>
-          </div> */}
 
           <div className="flex col-span-2 justify-center items-center">
             <button className="flex items-center justify-center gap-2 btn btn-sm lg:btn-sm 2xl:btn-md border-[#ffdb80] bg-[#ffdb80] hover:border-white hover:bg-transparent hover:text-white rounded-full lowercase">
