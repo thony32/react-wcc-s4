@@ -103,7 +103,7 @@ export default function Base() {
                   end={7.9}
                   duration={8}
                   decimals={2}
-                  decimal=","
+                  decimal="."
                 >
                   {({ countUpRef }) => (
                     <div className="lg:text-3xl 2xl:text-4xl">

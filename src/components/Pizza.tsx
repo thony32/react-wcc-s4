@@ -76,7 +76,7 @@ const Pizza = () => {
               end={7.9}
               duration={8}
               decimals={2}
-              decimal=",">
+              decimal=".">
               {({ countUpRef }) => (
                 <div className="lg:text-2xl 2xl:text-3xl">
                   $<span ref={countUpRef} className="animate-bounce infinite" />
