@@ -34,6 +34,7 @@ function App() {
 
   return (
     <div className="relative gilroy">
+      <img src="/images/leaf.png" className="absolute bottom-0 left-0" />
       <AnimatedCursor innerSize={15} outerSize={20} color="240,186,113" outerAlpha={0.5} innerScale={1.5} outerScale={3} clickables={["button",".fode"]} />
       {/* loading */}
       <div className={isLoad ? "opacity-100 duration-1000 ease-in-out h-screen flex justify-center items-center translate-y-52" : "hidden"}>
