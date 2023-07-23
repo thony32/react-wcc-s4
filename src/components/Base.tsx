@@ -161,13 +161,13 @@ export default function Base() {
       <div className="sm:flex relative grid grid-cols-1 space-y-10 sm:space-y-0 justify-between lg:gap-10 2xl:gap-16 px-[8%] translate-y-10 sm:-translate-y-16">
         <Chef />
         <div className="flex flex-col absolute top-[25%] left-0 sm:relative items-center lg:translate-x-[110%] 2xl:translate-x-[150%] ">
-          <span className="lg:p-0 2xl:p-2 text-xs sm:text-xl text-white font-semibold rotate-90 -translate-y-[100%] ">
+          <span className="lg:p-0 2xl:p-2 text-xs sm:text-xl sm:text-white font-semibold rotate-90 -translate-y-[100%] ">
             scroll
           </span>
           <svg className="h-5 sm:w-7 sm:h-16 animate-bounce infinite" viewBox="0 0 37.5 74.999998">
             <g clipPath="url(#aafcfa17d7)">
               <path
-                fill="#ffffff"
+                className="fill-black sm:fill-white"
                 d="M 37.460938 56.921875 L 18.8125 75.488281 L 0.0351562 56.792969 L 3.851562 52.988281 L 18.8125 67.886719 L 33.640625 53.117188 L 37.460938 56.921875 "
                 fillOpacity="1"
                 fillRule="nonzero"
@@ -175,7 +175,7 @@ export default function Base() {
             </g>
             <g clipPath="url(#1316e9b1b7)">
               <path
-                fill="#ffffff"
+                className="fill-black sm:fill-white"
                 d="M 16.347656 3.660156 L 16.347656 70.894531 C 16.347656 72.21875 17.351562 73.292969 18.597656 73.292969 C 19.839844 73.292969 20.847656 72.21875 20.847656 70.894531 L 20.847656 3.660156 C 20.847656 2.332031 19.839844 1.257812 18.597656 1.257812 C 17.351562 1.257812 16.347656 2.332031 16.347656 3.660156 Z M 16.347656 3.660156 "
                 fillOpacity="1"
                 fillRule="nonzero"
