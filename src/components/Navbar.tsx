@@ -105,7 +105,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="block lg:hidden fixed bottom-[30%] right-2 bg-red-500 z-50">
+      <div className="block lg:hidden fixed bottom-[30%] right-2 bg-transparent z-50">
         <MenuMobile />
       </div>
     </div>
